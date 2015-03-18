@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": ";;;;;;;;;AACA,KAAK;EACH,MAAM,EAAE,KAAK;EACb,KAAK,EAAE,KAAK;EACZ,gBAAgB,EAAE,OAAO;;AAGzB,cAAK;ECkBL,iBAAiB,EAAE,0DAAc;EACjC,aAAa,EAAE,0DAAc;EAC7B,cAAc,EAAE,0DAAc;EAC9B,YAAY,EAAE,0DAAc;EAC5B,SAAS,EAAE,0DAAc",
+"mappings": ";;;;;;;;;AAEA,KAAK;EACH,MAAM,EAAE,KAAK;EACb,KAAK,EAAE,KAAK;EACZ,aAAa,EAAC,GAAG;EACjB,gBAAgB,EAAE,OAAO;;AAGzB,cAAK;ECgBL,iBAAiB,EAAE,kDAAc;EACjC,aAAa,EAAE,kDAAc;EAC7B,cAAc,EAAE,kDAAc;EAC9B,YAAY,EAAE,kDAAc;EAC5B,SAAS,EAAE,kDAAc",
 "sources": ["test.scss","../lib/cicada/src/scss/fun/animation.scss"],
 "names": [],
 "file": "test.css"
