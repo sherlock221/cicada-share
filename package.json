@@ -1,0 +1,13 @@
+{
+    "name": "cicada-share",
+    "version": "0.1.0",
+    "devDependencies": {
+        "grunt": "~0.4.4",
+        "grunt-contrib-jshint": "*",
+        "grunt-contrib-uglify": "*",
+        "grunt-contrib-concat": "*",
+        "grunt-contrib-cssmin": "*",
+        "grunt-contrib-watch" : "*",
+        "grunt-contrib-connect" : "*"
+    }
+}

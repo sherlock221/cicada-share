@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/**
+ * sherlock221b
+ * rem常用设计函数
+ */
+/**
+ * sherlock221b
+ * 动画部分常用
+ */
+.box1 {
+  height: 100px;
+  width: 100px;
+  background-color: #f1f1f1; }
+
+.animate .box1 {
+  -webkit-animation: bounceInUp 2s ease 0.2s 1 both, wobble 1s ease 2.2s 1 both;
+  -ms-animation: bounceInUp 2s ease 0.2s 1 both, wobble 1s ease 2.2s 1 both;
+  -moz-animation: bounceInUp 2s ease 0.2s 1 both, wobble 1s ease 2.2s 1 both;
+  -o-animation: bounceInUp 2s ease 0.2s 1 both, wobble 1s ease 2.2s 1 both;
+  animation: bounceInUp 2s ease 0.2s 1 both, wobble 1s ease 2.2s 1 both; }
+
+/*# sourceMappingURL=test.css.map */
