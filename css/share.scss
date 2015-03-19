@@ -1,0 +1,107 @@
+@charset "utf-8";
+@import '../lib/cicada/src/scss/fun/fun';
+
+body {
+  background-color: #25324e;
+  //  padding: 20px;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.warp {
+  margin: rem(60) rem(40) 0;
+  color: #fff;
+}
+
+.section-top {
+  height: rem(120);
+  margin-bottom: rem(32);
+  img {
+    height: rem(120);
+    width: rem(120);
+    border-radius: 50%;
+    border: none;
+    @include animation(rotalenln 1s ease 1s, pulse 2.5s ease 2s 1 both)
+  }
+  .dialogue {
+    padding: rem(24) rem(30);
+    background-color: #547ed7;
+    border-radius: rem(22);
+    -webkit-box-shadow: 0 rem(8) rem(2) #20283f;
+    font-size: rem(32);
+    margin-left: rem(30);
+    b {
+      font-size: rem(40);
+    }
+  }
+}
+
+.section-bottom {
+  font-size: rem(30);
+  p {
+    margin: rem(32) 0;
+    b {
+      font-size: rem(48);
+      padding: 0 rem(12);
+    }
+    .new {
+      display: block;
+      height: rem(72);
+      width: rem(72);
+      text-align: center;
+      line-height: rem(72);
+      border-radius: 50%;
+      background-color: #ecc465;
+      font-size: rem(44);
+      font-style: normal;
+      color: #fff;
+      @include animation(swing 1s ease-in-out 1s, flash 2s ease 2s 1 both);
+    }
+  }
+}
+
+//.info{
+//  height: rem(460);
+//  img{
+//    height: rem(120);
+//    width: rem(120);
+//    border-radius: 50%;
+//    border: none;
+//    @include animation(rotalenln 1s ease 1s, pulse 2.5s ease 2s 1 both)
+//  }
+//  .dialogue{
+//    font-style: normal;
+//    display: inline-block;
+//    padding: rem(24) rem(30);
+//    position: absolute;
+//    top:rem(30);
+//    left: rem(160);
+//    background-color: #547ed7;
+//    font-size: rem(32);
+//    color: #fff;
+//    border-radius: rem(22);
+//    -webkit-box-shadow: 0 rem(8) rem(2) #20283f;
+//    b{
+//      font-weight: bold;
+//      font-size: rem(40);
+//    }
+//  }
+//  .new {
+//    display: block;
+//    height: rem(72);
+//    width: rem(72);
+//    text-align: center;
+//    line-height: rem(72);
+//    border-radius: 50%;
+//    background-color: #ecc465;
+//    font-size: rem(44);
+//    font-style: normal;
+//    color: #fff;
+//    @include animation(swing 1s ease-in-out 1s, flash 2s ease 2s 1 both);
+//  }
+//}
+
+.share-input {
+
+}
+

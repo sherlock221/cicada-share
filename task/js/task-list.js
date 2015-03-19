@@ -3,7 +3,7 @@ var Ajax = {
     getTaskList: function (token, queryTime, callback) {
         $.ajax({
             type: "get",
-            url: "../data/credit/task/getTaskList.json",
+            url: "../task/data/credit/task/getTaskList.json",
             dataType: 'json',
             data: {
                 "style": "",
