@@ -1,26 +1,18 @@
 @charset "utf-8";
 
 @import '../../lib/cicada/src/scss/fun/fun';
+@import '../task/templet';
 @import 'icon';
-
 body, html {
-  font-size: rem(20);
   background-color: #f6f6f6;
 }
-
-h3, p {
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
+.itme{
+  margin-bottom: 30px;
 }
 
 .section {
   padding: rem(25) rem(18);
   border-bottom: 1px solid #cecece;
-  //  height: rem(170);
   box-sizing: border-box;
   background-color: #fff;
   .left {
@@ -30,11 +22,13 @@ a {
     }
   }
   h3 {
-    font-size: rem(34)
+    font-size: rem(34);
+    font-weight: normal;
   }
   p {
     color: #c3c3c3;
     font-size: rem(26);
+    margin: rem(10) 0;
   }
   span {
     display: block;
@@ -42,23 +36,17 @@ a {
     font-size: rem(26);
   }
 }
-.active{
+
+.active {
   background-color: #ececec;
-}
-.btn {
-  padding-top: rem(10);
-  padding-bottom: rem(10);
-  font-size: rem(28);
-  line-height: rem(45);
-  color: #fff;
-  background-color: #658ad6;
-  text-align: center;
-  border-radius: rem(8);
 }
 
 .btn-goto {
   width: rem(112);
   display: block;
 }
+
+
+
 
 

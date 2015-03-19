@@ -371,6 +371,20 @@ th {
 html, body {
   font-family: "Helvetica Neue", Helvetica, "microsoft yahei", STHeiTi, Arial, sans-serif; }
 
+h1, h2, h3, h4, h5, h6, p {
+  padding: 0;
+  margin: 0; }
+
+a {
+  text-decoration: none; }
+
+a, .btn, button {
+  /* Prevent elements to be highlighted on tap */
+  -webkit-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
+  -ms-tap-highlight-color: transparent;
+  tap-highlight-color: transparent; }
+
 /**
  * sherlock221b
  * flex布局方式

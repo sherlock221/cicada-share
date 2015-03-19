@@ -2,7 +2,7 @@
 
 .icon{
   width: rem(89);
-  background-size: rem(89) rem(349);
+  background-size: rem(89) rem(424);
   background-image: url("../../images/task/icon.png");
 //  background-image: url("../../images/task/icon01.svg"),none;
 }
@@ -12,13 +12,21 @@
 }
 .icon-calendar{
   background-position: 0 rem(-74);
-  height: rem(88);
+  height: rem(86);
 }
 .icon-teacher{
   background-position: 0 rem(-162);
-  height: rem(94);
+  height: rem(92);
 }
 .icon-parent{
   background-position: 0 rem(-256);
   height: rem(93);
+}
+
+.l-arrow{
+  height: rem(30);
+  background-position: 0 rem(-349);
+  position: absolute;
+  top:rem(28);
+  left: rem(20);
 }

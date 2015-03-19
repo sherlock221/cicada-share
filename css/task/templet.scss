@@ -1,0 +1,24 @@
+
+.navbar{
+  height: rem(86);
+  line-height: rem(86);
+  background-color: #405d9e;
+  text-align: center;
+  font-size: rem(34);
+  color: #fff;
+  position: relative;
+}
+
+.btn {
+  padding-top: rem(10);
+  padding-bottom: rem(10);
+  font-size: rem(28);
+  line-height: rem(45);
+  color: #fff;
+  background-color: #658ad6;
+  text-align: center;
+  border-radius: rem(8);
+  &:hover{
+    background-color: #5977b9;
+  }
+}
