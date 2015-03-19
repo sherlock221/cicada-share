@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 @import '../../lib/cicada/src/scss/fun/fun';
-@import '../task/templet';
+@import '../task/template';
 @import 'icon';
 body, html {
   background-color: #f6f6f6;
@@ -9,7 +9,6 @@ body, html {
 .itme{
   margin-bottom: 30px;
 }
-
 .section {
   padding: rem(25) rem(18);
   border-bottom: 1px solid #cecece;

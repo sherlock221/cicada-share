@@ -14,70 +14,31 @@
     <link rel="stylesheet" href="lib/cicada/dist/css/module.css"/>
     <link rel="stylesheet" href="css/task/get-active-value.css">
     <title>获取活跃值</title>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/art-template/dist/template-native.js"></script>
 </head>
 <body>
 <div class="navbar">
     <a href="#"><i class="icon l-arrow ib"></i></a>
     <span>获取活跃值</span>
 </div>
-<div class="itme">
-    <div class="section fx-row fx-row-center">
-        <div class="left ">
-            <i class="icon icon-pencil"></i>
-        </div>
+<div id="content"></div>
+<script id="task-tem" type="text/html">
+       <%for (var i=0;i<bizData.length;i++) {%>
+       <div class="section fx-row fx-row-center">
+           <div class="left ">
+               <i class="icon <%=bizData[i].image %>"></i>
+           </div>
         <div class="fx-col-1 ">
-            <h3>发布知了</h3>
-
-            <p class="text-ellipsis">成功发布知了，每天最多25活跃值</p>
-            <span>奖励：每条知了＋5活跃值</span>
+            <h3><%=bizData[i].title %></h3>
+            <p class="text-ellipsis"><%=bizData[i].ruleDesc %></p>
+            <span><%=bizData[i].rewardDesc %></span>
         </div>
-        <div class="right ">
-            <a href="javascript:void(0)" class="btn btn-goto ntp">前往</a>
-        </div>
-    </div>
-
-    <div class="section fx-row fx-row-center active">
-        <div class="left">
-            <i class="icon icon-calendar"></i>
-        </div>
-        <div class="fx-col-1 ">
-            <h3>每日签到</h3>
-
-            <p>签到领取活跃值，每日一次</p>
-            <span>奖励：每条知了＋10活跃值</span>
-        </div>
-    </div>
-
-    <div class="section fx-row fx-row-center">
-        <div class="left ">
-            <i class="icon icon-teacher"></i>
-        </div>
-        <div class="fx-col-1 ">
-            <h3>邀请老师</h3>
-
-            <p>成功邀请老师加入班级</p>
-            <span>奖励：邀请老师＋30活跃值</span>
-        </div>
-        <div class="right ">
-            <a href="" class="btn btn-goto">前往</a>
-        </div>
-    </div>
-
-    <div class="section fx-row fx-row-center">
-        <div class="left ">
-            <i class="icon icon-parent"></i>
-        </div>
-        <div class="fx-col-1 ">
-            <h3>邀请家长</h3>
-
-            <p>成功邀请家长加入班级</p>
-            <span>奖励：邀请老师＋10活跃值</span>
-        </div>
-        <div class="right ">
-            <a href="" class="btn btn-goto">前往</a>
-        </div>
-    </div>
-</div>
-
-
+           <div class="right ">
+               <a href="javascript:goPage('<%=bizData[i].url %>')" class="btn btn-goto ntp">前往</a>
+           </div>
+       </div>
+        <%}%>
+</script>
+<script src="js/task-list.js"></script>
 </body>

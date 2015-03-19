@@ -1,0 +1,51 @@
+{
+  "rtnCode": "0000000",
+  "msg": "错误原因",
+  "bizData": [
+    {
+      "id": "任务ID（数据库ID）",
+      "title": "发布知了",
+      "ruleDesc": "成功发布知了，每天最多25活跃值",
+      "rewardDesc": "奖励：每条知了＋5活跃值",
+      "taskType": "任务类型  0：积分规则   1：运营活动",
+      "taskId": "任务对应的ID  与taskType关联使用   taskType为0 ：任务ID为积分的urlId   taskType为1 ：任务ID为运营活动的ID",
+      "image": "icon-pencil",
+      "credit": "最大限制次数",
+      "completedNum": "已完成次数",
+      "url":"xx.com"
+    },
+    {
+      "id": "任务ID（数据库ID）",
+      "title": "每日签到",
+      "ruleDesc": "成功发布知了，每天最多25活跃值",
+      "rewardDesc": "奖励：每条知了＋5活跃值",
+      "taskType": "任务类型  0：积分规则   1：运营活动",
+      "taskId": "任务对应的ID  与taskType关联使用   taskType为0 ：任务ID为积分的urlId   taskType为1 ：任务ID为运营活动的ID",
+      "image": "icon-calendar",
+      "credit": "最大限制次数",
+      "completedNum": "已完成次数"
+    },
+    {
+      "id": "任务ID（数据库ID）",
+      "title": "邀请老师",
+      "ruleDesc": "成功发布知了，每天最多25活跃值",
+      "rewardDesc": "奖励：每条知了＋5活跃值",
+      "taskType": "任务类型  0：积分规则   1：运营活动",
+      "taskId": "任务对应的ID  与taskType关联使用   taskType为0 ：任务ID为积分的urlId   taskType为1 ：任务ID为运营活动的ID",
+      "image": "icon-teacher",
+      "credit": "最大限制次数",
+      "completedNum": "已完成次数"
+    },
+    {
+      "id": "任务ID（数据库ID）",
+      "title": "邀请家长",
+      "ruleDesc": "成功发布知了，每天最多25活跃值",
+      "rewardDesc": "奖励：每条知了＋5活跃值",
+      "taskType": "任务类型  0：积分规则   1：运营活动",
+      "taskId": "任务对应的ID  与taskType关联使用   taskType为0 ：任务ID为积分的urlId   taskType为1 ：任务ID为运营活动的ID",
+      "image": "icon-parent",
+      "credit": "最大限制次数",
+      "completedNum": "已完成次数"
+    }
+  ]
+}
