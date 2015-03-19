@@ -7,17 +7,52 @@
  * sherlock221b
  * 动画部分常用
  */
-.box1 {
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  background-color: #f1f1f1; }
+body, html {
+  font-size: 10px;
+  background-color: #25324e; }
 
-.animate .box1 {
-  -webkit-animation: bounceInUp 2s ease 0.2s, flash 1s ease 2.2s 1 both;
-  -ms-animation: bounceInUp 2s ease 0.2s, flash 1s ease 2.2s 1 both;
-  -moz-animation: bounceInUp 2s ease 0.2s, flash 1s ease 2.2s 1 both;
-  -o-animation: bounceInUp 2s ease 0.2s, flash 1s ease 2.2s 1 both;
-  animation: bounceInUp 2s ease 0.2s, flash 1s ease 2.2s 1 both; }
+.animate .new {
+  display: block;
+  height: 36px;
+  width: 36px;
+  text-align: center;
+  line-height: 36px;
+  border-radius: 50%;
+  background-color: #ecc465;
+  font-size: 22px;
+  font-style: normal;
+  color: #fff;
+  -webkit-animation: swing 1s ease-in-out 1s, flash 2s ease 2s 1 both;
+  -ms-animation: swing 1s ease-in-out 1s, flash 2s ease 2s 1 both;
+  -moz-animation: swing 1s ease-in-out 1s, flash 2s ease 2s 1 both;
+  -o-animation: swing 1s ease-in-out 1s, flash 2s ease 2s 1 both;
+  animation: swing 1s ease-in-out 1s, flash 2s ease 2s 1 both; }
+
+.header {
+  position: relative; }
+  .header .dialogue {
+    font-style: normal;
+    display: inline-block;
+    padding: 12px 15px;
+    position: absolute;
+    top: 15px;
+    left: 80px;
+    background-color: #547ed7;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 11px;
+    -webkit-box-shadow: 0 4px 1px #20283f; }
+    .header .dialogue b {
+      font-weight: bold;
+      font-size: 20px; }
+  .header .avatar {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    -webkit-animation: rotalenln 1s ease 1s, pulse 2.5s ease 2s 1 both;
+    -ms-animation: rotalenln 1s ease 1s, pulse 2.5s ease 2s 1 both;
+    -moz-animation: rotalenln 1s ease 1s, pulse 2.5s ease 2s 1 both;
+    -o-animation: rotalenln 1s ease 1s, pulse 2.5s ease 2s 1 both;
+    animation: rotalenln 1s ease 1s, pulse 2.5s ease 2s 1 both; }
 
 /*# sourceMappingURL=test.css.map */

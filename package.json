@@ -1,13 +1,27 @@
 {
-    "name": "cicada-share",
-    "version": "0.1.0",
-    "devDependencies": {
-        "grunt": "~0.4.4",
-        "grunt-contrib-jshint": "*",
-        "grunt-contrib-uglify": "*",
-        "grunt-contrib-concat": "*",
-        "grunt-contrib-cssmin": "*",
-        "grunt-contrib-watch" : "*",
-        "grunt-contrib-connect" : "*"
-    }
+  "name": "cicada-share",
+  "description": "cicada",
+  "version": "0.1.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "scripts": {
+    "start": "http-server -a 0.0.0.0 -p 8000"
+  },
+  "keywords": [
+    "cicada,cicada-share"
+  ],
+  "author": "idenpin",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^0.7.4",
+    "grunt": "~0.4.4",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-cssmin": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-contrib-connect": "*"
+  }
 }

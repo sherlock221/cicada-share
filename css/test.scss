@@ -1,16 +1,65 @@
 @charset "utf-8";
 @import '../lib/cicada/src/scss/fun/fun';
-.box1{
-  height: 100px;
-  width: 100px;
-  border-radius:50%;
-  background-color: #f1f1f1;
+
+//.box1{
+//  height: 100px;
+//  width: 100px;
+//  border-radius:50%;
+//  background-color: #f1f1f1;
+//}
+//
+//  .box1{
+//    //动画名，动画时间，动画速度函数（ease/ease-in-out），动画延迟时间，动画执行次数（1/infinite/both）
+//    @include animation(bounceInUp 2s ease 0.2s,flash 1s ease 2.2s 1 both);
+//  }
+body, html {
+  font-size: rem(20);
+  background-color: #25324e;
 }
-.animate{
-  .box1{
-    //动画名，动画时间，动画速度函数（ease/ease-in-out），动画延迟时间，动画执行次数（1/infinite/both）
-    @include animation(bounceInUp 2s ease 0.2s,flash 1s ease 2.2s 1 both);
+
+.animate {
+
+  .new {
+    display: block;
+    height: rem(72);
+    width: rem(72);
+    text-align: center;
+    line-height: rem(72);
+    border-radius: 50%;
+    background-color: #ecc465;
+    font-size: rem(44);
+    font-style: normal;
+    color: #fff;
+    @include animation(swing 1s ease-in-out 1s, flash 2s ease 2s 1 both);
   }
 }
+
+.header {
+  position: relative;
+  .dialogue{
+    font-style: normal;
+    display: inline-block;
+    padding: rem(24) rem(30);
+    position: absolute;
+    top:rem(30);
+    left: rem(160);
+    background-color: #547ed7;
+    font-size: rem(32);
+    color: #fff;
+    border-radius: rem(22);
+    -webkit-box-shadow: 0 rem(8) rem(2) #20283f;
+    b{
+      font-weight: bold;
+      font-size: rem(40);
+    }
+  }
+  .avatar {
+    height: rem(120);
+    width: rem(120);
+    border-radius: 50%;
+    @include animation(rotalenln 1s ease 1s, pulse 2.5s ease 2s 1 both)
+  }
+}
+
 
 
