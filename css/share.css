@@ -26,17 +26,17 @@ body {
   border-radius: 50%;
   border: none;
   display: inline-block;
-  margin-right: 10px; }
+  margin-right: 30px; }
 .row .dialogue {
   position: relative;
   display: inline-block; }
   .row .dialogue b {
     font-size: 20px; }
   .row .dialogue .dialogue-left {
-    height: 49.5px;
+    height: 46px;
     position: absolute;
-    top: 0;
-    left: 0; }
+    top: 1px;
+    left: -28px; }
   .row .dialogue .dialogue-right {
     background-color: #547ed7;
     display: inline-block;
@@ -159,7 +159,7 @@ body {
   width: 216px;
   height: 44px;
   line-height: 44px;
-  color: #fff;
+  color: #fff !important;
   font-size: 16px;
   border-radius: 4px;
   box-shadow: 1px 6px 2px #20283f; }
@@ -167,16 +167,16 @@ body {
 .btn-green {
   background-color: #47c450; }
   .btn-green:hover {
-    background-color: #3f9b48; }
+    background-color: #3eaf47; }
 
 .btn-blue {
   background-color: #547ed7; }
   .btn-blue:hover {
-    background-color: #3d5b9b; }
+    background-color: #4765af; }
 
 .btn-red {
   background-color: #e7505e; }
   .btn-red:hover {
-    background-color: #9b3a44; }
+    background-color: #af3f49; }
 
 /*# sourceMappingURL=share.css.map */

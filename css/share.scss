@@ -25,7 +25,7 @@ body {
     border-radius: 50%;
     border: none;
     display: inline-block;
-    margin-right: rem(20);
+    margin-right: rem(60);
   }
   .dialogue {
     position: relative;
@@ -34,11 +34,10 @@ body {
       font-size: rem(40);
     }
     .dialogue-left {
-      height: rem(99);
-      //      margin-left: rem(20);
+      height: rem(92);
       position: absolute;
-      top: 0;
-      left: 0;
+      top: rem(2);
+      left: rem(-56);
     }
     .dialogue-right {
       background-color: #547ed7;
@@ -197,7 +196,7 @@ body {
   width: rem(432);
   height: rem(88);
   line-height: rem(88);
-  color: #fff;
+  color: #fff!important;
   font-size: rem(32);
   border-radius: 4px;
   box-shadow: 1px 6px 2px #20283f;
@@ -206,20 +205,20 @@ body {
 .btn-green {
   background-color: #47c450;
   &:hover {
-    background-color: #3f9b48;
+    background-color: #3eaf47;
   }
 }
 
 .btn-blue {
   background-color: #547ed7;
   &:hover {
-    background-color: #3d5b9b;
+    background-color: #4765af;
   }
 }
 
 .btn-red {
   background-color: #e7505e;
   &:hover {
-    background-color: #9b3a44;
+    background-color: #af3f49;
   }
 }
