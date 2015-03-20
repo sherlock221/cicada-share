@@ -22,7 +22,7 @@ var Util = {
             for (var i = 0; i < array.length; i++) {
                 var objs = array[i];
                 if (objs[key]) {
-                    return  objs[key];
+                    return objs[key];
                     //console.log(objs[key]);
                 }
 
@@ -31,17 +31,17 @@ var Util = {
         }
     },
 
-    encodeParam:function(paramList){
+    encodeParam: function (paramList) {
 
         var baseUrl = "";
-        for(var i=0;i<paramList.length;i++){
-            var   value = paramList[i].value;
-            if(i == 0){
-                baseUrl += "?"+paramList[i].key+"="+encodeURI(value);
+        for (var i = 0; i < paramList.length; i++) {
+            var value = paramList[i].value;
+            if (i == 0) {
+                baseUrl += "?" + paramList[i].key + "=" + encodeURI(value);
             }
-            else{
+            else {
                 value = paramList[i].value;
-                baseUrl+= "&"+paramList[i].key+"="+encodeURI(value);
+                baseUrl += "&" + paramList[i].key + "=" + encodeURI(value);
             }
         }
 
@@ -52,7 +52,7 @@ var Util = {
 
         getSgObj: function (key) {
             var obj = $window.sessionStorage.getItem(key);
-            return  JSON.parse(obj);
+            return JSON.parse(obj);
         },
 
         setSgObj: function (key, value) {
@@ -60,7 +60,7 @@ var Util = {
         },
 
         getSg: function (key) {
-            return  $window.sessionStorage.getItem(key);
+            return $window.sessionStorage.getItem(key);
         },
 
         setSg: function (key, value) {
@@ -85,14 +85,14 @@ var Util = {
 
         getLgObj: function (key) {
             var obj = $window.localStorage.getItem(key);
-            return  JSON.parse(obj);
+            return JSON.parse(obj);
         },
         setLgObj: function (key, value) {
             return $window.localStorage.setItem(key, JSON.stringify(value));
         },
 
         getLg: function (key) {
-            return  $window.localStorage.getItem(key);
+            return $window.localStorage.getItem(key);
         },
 
         setLg: function (key, value) {
@@ -102,8 +102,6 @@ var Util = {
             $window.localStorage.removeItem(key);
         }
     }
-
-
 
 
 };

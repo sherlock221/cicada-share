@@ -19,6 +19,7 @@ body {
 }
 
 .row {
+  display: block!important;
   .avatar {
     height: rem(120);
     width: rem(120);
@@ -26,8 +27,11 @@ body {
     border: none;
     display: inline-block;
     margin-right: rem(60);
+    @include animation(rotateIn 2s linear 0.5s,$animationName2);
+//    @include animation(pulse 1s ease-in-out 1s, flash 2s ease 2s 1 both);, flash 2s ease 2s 1 both
   }
   .dialogue {
+    @include animation(pulse 2s ease 2.6s,$animationName2);
     position: relative;
     display: inline-block;
     b {
@@ -49,8 +53,6 @@ body {
       -webkit-box-shadow: 0 rem(8) rem(2) #20283f;
       font-size: rem(32);
       padding-left: rem(60);
-      //      box-sizing: border-box;
-
     }
   }
   .share-info {
@@ -62,6 +64,7 @@ body {
     text-align: left;
     display: block;
     .text-one {
+      @include animation(slideOutLeft 0.5s linear 4.7s,$animationName2);
       font-size: rem(30);
       //      text-align: center;
       line-height: rem(60);
@@ -71,6 +74,7 @@ body {
       }
     }
     .text-two {
+      @include animation(slideOutLeft 0.6s linear 5.3s,$animationName2);
       font-size: rem(40);
       line-height: rem(65);
       .new {
@@ -83,6 +87,7 @@ body {
         font-style: normal;
         text-align: center;
         margin: 0 rem(10);
+        @include animation(swing 2s ease-in-out 6s,$animationName2);
       }
     }
   }
@@ -115,6 +120,9 @@ body {
     color: #fff;
     font-size: rem(32) !important;
     border-radius: 4px;
+    &:hover{
+      background-color: #af353f;
+    }
   }
 }
 
@@ -136,6 +144,8 @@ body {
     box-sizing: border-box;
     margin-top: rem(70);
     margin-bottom: rem(60);
+    margin-right: auto;
+    margin-left: auto;
     height: rem(310);
     width: rem(560);
     background-color: #fff;
@@ -199,7 +209,7 @@ body {
   color: #fff!important;
   font-size: rem(32);
   border-radius: 4px;
-  box-shadow: 1px 6px 2px #20283f;
+  box-shadow: 1px 3px 1px #20283f;
 }
 
 .btn-green {
