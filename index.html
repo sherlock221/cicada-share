@@ -20,44 +20,42 @@
 
 
     <div class="row">
-        <img src="images/avatar.png" class="avatar"/>
+        <img src="images/avatar.png" class="avatar text-left"/>
         <div class="dialogue">
-          <img src="images/sprint-icon.png" alt="" class="dialogue-left"/>
-          <span class="dialogue-right"><b>Hi,</b>我是王丹老师</span>
+            <img src="images/sprint-icon.png" alt="" class="dialogue-left"/><span class="dialogue-right"><b>Hi,</b>我是王丹老师</span>
         </div>
     </div>
     <div class="row">
-        <div class="share-info">
-            <p>正在和<b>4</b>位老师,<b>20</b>位家长使用知了一起使用知了 <br>
+        <div class="share-info ">
+            <p class="text-one">正在和<b>4</b>位老师,<b>20</b>位家长使用知了</p>
+            <div class="text-two">
+                用知了一起使用知了<br>
                 快尝试<i class="new">新</i>的沟通方式吧!
+            </div>
         </div>
     </div>
     <div class="row">
-
+        <form action="" class="share-input">
+            <div class="tips">输入手机号,领取奖励</div>
+            <input type="tel" placeholder="请输入手机号" class=""/>
+            <button>领取奖励</button>
+        </form>
     </div>
-
-    <!--<div class="section-top">-->
-    <!--<div class="dialogue">-->
-    <!--<img src="images/avatar.png" class="avatar"/>-->
-    <!--<div class="dialogue-left">-->
-    <!--<img src="images/sprint-icon.png" alt=""/>-->
-    <!--</div>-->
-    <!--<div class="dialogue-right">-->
-    <!--<span class=""><b>Hi,</b>我是王丹老师</span>-->
-    <!--</div>-->
-    <!--</div>-->
-
-    <!--<div class="dialogue-center">-->
-    <!--<p>正在和<b>4</b>位老师,<b>20</b>位家长使用知了一起使用知了 <br>-->
-    <!--快尝试<i class="new">新</i>的沟通方式吧!-->
-    <!--</p>-->
-    <!--</div>-->
-    <!--</div>-->
-    <!--<div class="section-bottom">-->
-    <!--<form action="" class="share-input">-->
-    <!--<div class="tips">输入手机号,领取奖励</div>-->
-    <!--<input type="text" placeholder="请输入手机号"/>-->
-    <!--<button>领取奖励</button>-->
-    <!--</form>-->
-    <!--</div>-->
 </div>
+<div class="warp-bottom"></div>
+<script>
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+                };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+
+</script>

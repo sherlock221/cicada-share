@@ -7,13 +7,16 @@
  * sherlock221b
  * 动画部分常用
  */
+html, body {
+  font-size: 20px; }
+
 body {
   background-color: #25324e;
   box-sizing: border-box;
   color: #fff; }
 
 .warp {
-  margin: 30px 20px 0;
+  margin: 20px;
   color: #fff;
   text-align: center; }
 
@@ -22,47 +25,156 @@ body {
   width: 60px;
   border-radius: 50%;
   border: none;
-  margin-right: 30px; }
+  display: inline-block; }
 .row .dialogue {
-  display: inline;
-  position: relative; }
+  position: relative;
+  display: inline-block; }
+  .row .dialogue b {
+    font-size: 20px; }
   .row .dialogue .dialogue-left {
+    height: 49.5px;
     position: absolute;
-    top: -15px;
-    left: -26.5px;
-    display: inline;
-    height: 46.5px; }
+    top: 0;
+    left: 0; }
   .row .dialogue .dialogue-right {
-    display: inline;
     background-color: #547ed7;
-    padding: 15px 15px 15px 5px;
+    display: inline-block;
+    line-height: 47px;
+    height: 47px;
+    padding-right: 15px;
     border-radius: 0 11px 11px 0;
     -webkit-box-shadow: 0 4px 1px #20283f;
-    font-size: 16px; }
+    font-size: 16px;
+    padding-left: 30px; }
 .row .share-info {
+  width: 260px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 13px;
+  margin-bottom: 40px;
   text-align: left;
-  font-size: 15px; }
-  .row .share-info p {
-    margin: 15px 0; }
-    .row .share-info p b {
-      font-size: 24px;
+  display: block; }
+  .row .share-info .text-one {
+    font-size: 15px;
+    line-height: 30px; }
+    .row .share-info .text-one b {
+      font-size: 20px;
       padding: 0 6px; }
-    .row .share-info p .new {
-      display: inline-block;
+  .row .share-info .text-two {
+    font-size: 20px;
+    line-height: 32.5px; }
+    .row .share-info .text-two .new {
       height: 35px;
+      line-height: 35px;
       width: 35px;
-      margin: 0 10px;
-      text-align: center;
-      line-height: 36px;
       border-radius: 50%;
+      display: inline-block;
       background-color: #ecc465;
-      font-size: 22px;
       font-style: normal;
-      color: #fff;
-      -webkit-animation: swing 1s ease-in-out 1s, flash 2s ease 2s 1 both;
-      -ms-animation: swing 1s ease-in-out 1s, flash 2s ease 2s 1 both;
-      -moz-animation: swing 1s ease-in-out 1s, flash 2s ease 2s 1 both;
-      -o-animation: swing 1s ease-in-out 1s, flash 2s ease 2s 1 both;
-      animation: swing 1s ease-in-out 1s, flash 2s ease 2s 1 both; }
+      text-align: center;
+      margin: 0 5px; }
+
+.share-input {
+  color: #64769c;
+  font-size: 12px; }
+  .share-input .tips {
+    margin-bottom: 14px; }
+  .share-input input[type=tel] {
+    text-align: center;
+    width: 216px;
+    margin: 0 auto 22.5px;
+    border-radius: 4px;
+    color: #25324e;
+    font-size: 16px;
+    border: none;
+    padding: 14px;
+    box-sizing: border-box;
+    display: block; }
+  .share-input button {
+    line-height: 44px;
+    width: 216px;
+    background-color: #e7505e;
+    border: none;
+    color: #fff;
+    font-size: 16px !important;
+    border-radius: 4px; }
+
+.warp-bottom {
+  background: url("../images/page-bottom-img.png") no-repeat;
+  height: 72.5px;
+  width: 100%;
+  background-size: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0; }
+
+.warp .alert-info {
+  padding: 0 25px;
+  box-sizing: border-box;
+  margin-top: 35px;
+  margin-bottom: 30px;
+  height: 155px;
+  width: 280px;
+  background-color: #fff;
+  border-radius: 4px;
+  display: inline-block;
+  box-shadow: 1px 6px 2px #20283f; }
+  .warp .alert-info span {
+    font-size: 18px;
+    color: #25324e; }
+    .warp .alert-info span b {
+      color: #f19218;
+      font-size: 30px;
+      margin-top: 30px;
+      margin-bottom: 24px;
+      display: inline-block;
+      padding-right: 5px;
+      padding-left: 5px; }
+  .warp .alert-info .mr {
+    margin-top: 27.5px;
+    margin-bottom: 15px;
+    display: inline-block; }
+  .warp .alert-info p {
+    font-size: 13px;
+    color: #8a8f98;
+    margin-bottom: 7.5px; }
+.warp .tips-info {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #7c89a5;
+  font-size: 13px; }
+  .warp .tips-info b {
+    font-weight: normal;
+    color: #f4bb71; }
+.warp .dowhat .btn-blue {
+  margin-bottom: 15px; }
+
+@media screen and (max-height: 480px) {
+  .warp-bottom {
+    display: none; } }
+.btn {
+  display: inline-block;
+  width: 216px;
+  height: 44px;
+  line-height: 44px;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 4px;
+  box-shadow: 1px 6px 2px #20283f; }
+
+.btn-green {
+  background-color: #47c450; }
+  .btn-green:hover {
+    background-color: #3f9b48; }
+
+.btn-blue {
+  background-color: #547ed7; }
+  .btn-blue:hover {
+    background-color: #3d5b9b; }
+
+.btn-red {
+  background-color: #e7505e; }
+  .btn-red:hover {
+    background-color: #9b3a44; }
 
 /*# sourceMappingURL=share.css.map */
