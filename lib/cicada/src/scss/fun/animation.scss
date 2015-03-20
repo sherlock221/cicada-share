@@ -22,6 +22,7 @@
 }
 
 //animation 兼容
+$animationName2:'swing 0 ease 0 both 1';
 @mixin animation($animationName,$animationName2) {
   -webkit-animation: $animationName,$animationName2;
   -ms-animation: $animationName,$animationName2;

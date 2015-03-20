@@ -1,21 +1,50 @@
-html, body {
+@charset "utf-8";
+/*
+Description:This is HTML5 Reset .
+Version:v0.01
+LastUpData:3/20/2015
+*/
+html, body, dl, dd, h1, h2, h3, h4, h5, h6, dl, dt, dd, ol, ul, li, fieldset, form, label, input, textarea, p,
+blockquote, table, caption, tbody, tfoot, thead, tr, th, td, b, i, em, strong, small, audio, video, details, summary {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-style: normal;
+  vertical-align: baseline;
   font-family: "Helvetica Neue", Helvetica, "microsoft yahei", STHeiTi, Arial, sans-serif;
 }
 
-
-h1,h2,h3,,h4,h5,h6,p{
-  padding: 0;
+header, footer, section, nav, menu, details, figure, figcaption, article, aside {
   margin: 0;
+  padding: 0;
+  display: block;
 }
 
-a {
-  text-decoration: none;
+html {
+  box-sizing: border-box;
 }
 
-a, .btn, button {
-  /* Prevent elements to be highlighted on tap */
+a, button, input {
+  outline: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -moz-tap-highlight-color: rgba(0, 0, 0, 0);
   -ms-tap-highlight-color: rgba(0, 0, 0, 0);
   tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+ol, ul, li {
+  list-style-type: none
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  border: 0;
+}
+
+a {
+  text-decoration: none;
 }

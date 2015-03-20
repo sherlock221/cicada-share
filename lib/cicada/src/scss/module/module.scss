@@ -3,28 +3,21 @@
  * sherlock221b
  * 所有css模块
  */
-
-
-//scss函数
-@import "../fun/fun";
-
-//reset
-@import "reset/reset";
-
-//default
+//default and reset
 @import "reset/default";
 
-//布局
+//sass function
+@import "../fun/fun";
+
+//layout
 @import "layout/layout";
 
-//文本
+//text tool
 @import "text/text";
 
-//常用数值
+//constant
 @import "value/value";
 
-//属性
+//property
 @import "property/property";
-
-
 
