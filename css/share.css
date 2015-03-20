@@ -25,7 +25,8 @@ body {
   width: 60px;
   border-radius: 50%;
   border: none;
-  display: inline-block; }
+  display: inline-block;
+  margin-right: 10px; }
 .row .dialogue {
   position: relative;
   display: inline-block; }
@@ -89,7 +90,8 @@ body {
     border: none;
     padding: 14px;
     box-sizing: border-box;
-    display: block; }
+    display: block;
+    line-height: 18px; }
   .share-input button {
     line-height: 44px;
     width: 216px;

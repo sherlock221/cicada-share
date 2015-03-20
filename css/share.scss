@@ -25,6 +25,7 @@ body {
     border-radius: 50%;
     border: none;
     display: inline-block;
+    margin-right: rem(20);
   }
   .dialogue {
     position: relative;
@@ -71,8 +72,6 @@ body {
       }
     }
     .text-two {
-      //      margin-left: rem(28);
-      //      text-align: center;
       font-size: rem(40);
       line-height: rem(65);
       .new {
@@ -107,6 +106,7 @@ body {
     padding: rem(28);
     box-sizing: border-box;
     display: block;
+    line-height: 18px;
   }
   button {
     line-height: rem(88);
@@ -143,10 +143,10 @@ body {
     border-radius: 4px;
     display: inline-block;
     box-shadow: 1px 6px 2px #20283f;
-    span{
+    span {
       font-size: rem(36);
       color: #25324e;
-      b{
+      b {
         color: #f19218;
         font-size: rem(60);
         margin-top: rem(60);
@@ -156,12 +156,12 @@ body {
         padding-left: rem(10);
       }
     }
-    .mr{
+    .mr {
       margin-top: rem(55);
       margin-bottom: rem(30);
       display: inline-block;
     }
-    p{
+    p {
       font-size: rem(26);
       color: #8a8f98;
       margin-bottom: rem(15);
@@ -177,12 +177,11 @@ body {
       color: #f4bb71;
     }
   }
-  .dowhat{
-    .btn-blue{
+  .dowhat {
+    .btn-blue {
       margin-bottom: rem(30);
     }
   }
-
 
 }
 
@@ -191,8 +190,6 @@ body {
     display: none;
   }
 }
-
-
 
 //common-css
 .btn {
@@ -205,21 +202,24 @@ body {
   border-radius: 4px;
   box-shadow: 1px 6px 2px #20283f;
 }
-.btn-green{
+
+.btn-green {
   background-color: #47c450;
-  &:hover{
+  &:hover {
     background-color: #3f9b48;
   }
 }
-.btn-blue{
+
+.btn-blue {
   background-color: #547ed7;
-  &:hover{
+  &:hover {
     background-color: #3d5b9b;
   }
 }
-.btn-red{
+
+.btn-red {
   background-color: #e7505e;
-  &:hover{
+  &:hover {
     background-color: #9b3a44;
   }
 }
