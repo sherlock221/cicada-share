@@ -14,42 +14,44 @@ body {
 
 .warp {
   margin: 30px 20px 0;
-  color: #fff; }
+  color: #fff;
+  text-align: center; }
 
-.section-top {
+.row .avatar {
   height: 60px;
-  margin-bottom: 16px; }
-  .section-top img {
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-    border: none;
-    -webkit-animation: rotalenln 1s ease 1s, pulse 2.5s ease 2s 1 both;
-    -ms-animation: rotalenln 1s ease 1s, pulse 2.5s ease 2s 1 both;
-    -moz-animation: rotalenln 1s ease 1s, pulse 2.5s ease 2s 1 both;
-    -o-animation: rotalenln 1s ease 1s, pulse 2.5s ease 2s 1 both;
-    animation: rotalenln 1s ease 1s, pulse 2.5s ease 2s 1 both; }
-  .section-top .dialogue {
-    padding: 12px 15px;
+  width: 60px;
+  border-radius: 50%;
+  border: none;
+  margin-right: 30px; }
+.row .dialogue {
+  display: inline;
+  position: relative; }
+  .row .dialogue .dialogue-left {
+    position: absolute;
+    top: -15px;
+    left: -26.5px;
+    display: inline;
+    height: 46.5px; }
+  .row .dialogue .dialogue-right {
+    display: inline;
     background-color: #547ed7;
-    border-radius: 11px;
+    padding: 15px 15px 15px 5px;
+    border-radius: 0 11px 11px 0;
     -webkit-box-shadow: 0 4px 1px #20283f;
-    font-size: 16px;
-    margin-left: 15px; }
-    .section-top .dialogue b {
-      font-size: 20px; }
-
-.section-bottom {
+    font-size: 16px; }
+.row .share-info {
+  text-align: left;
   font-size: 15px; }
-  .section-bottom p {
-    margin: 16px 0; }
-    .section-bottom p b {
+  .row .share-info p {
+    margin: 15px 0; }
+    .row .share-info p b {
       font-size: 24px;
       padding: 0 6px; }
-    .section-bottom p .new {
-      display: block;
-      height: 36px;
-      width: 36px;
+    .row .share-info p .new {
+      display: inline-block;
+      height: 35px;
+      width: 35px;
+      margin: 0 10px;
       text-align: center;
       line-height: 36px;
       border-radius: 50%;
