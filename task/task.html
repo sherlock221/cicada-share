@@ -22,26 +22,30 @@
 </head>
 <body>
 <div class="navbar">
-    <a href="#"><i class="icon l-arrow ib"></i></a>
+    <a href="javascript:goBack()"><i class="icon l-arrow ib"></i></a>
     <span>获取活跃值</span>
 </div>
 <div id="content"></div>
 <script id="task-tem" type="text/html">
-       <%for (var i=0;i<bizData.length;i++) {%>
-       <div class="section fx-row fx-row-center">
-           <div class="left ">
-               <i class="icon <%=bizData[i].image %>"></i>
-           </div>
+    <%for (var i=0;i
+    <bizData.length;i++) {%>
+    <div class="section fx-row fx-row-center">
+        <div class="left ">
+            <i class="icon <%=bizData[i].image %>"></i>
+        </div>
         <div class="fx-col-1 ">
             <h3><%=bizData[i].title %></h3>
+
             <p class="text-ellipsis"><%=bizData[i].ruleDesc %></p>
             <span><%=bizData[i].rewardDesc %></span>
         </div>
-           <div class="right ">
-               <a href="javascript:goPage('<%=bizData[i].url %>')" class="btn btn-goto ntp">前往</a>
-           </div>
-       </div>
-        <%}%>
+        <div class="right">
+            <%if(bizData[i].url) {%>
+                <a href="javascript:goPage('<%=bizData[i].url %>')" class="btn btn-goto ntp">前往</a>
+            <%}%>
+        </div>
+    </div>
+    <%}%>
 </script>
 <script src="js/task-list.js"></script>
 </body>

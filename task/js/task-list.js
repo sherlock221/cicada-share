@@ -38,7 +38,9 @@ var  goPage = function(url){
             break;
     }
 };
-
+var goBack =function(){
+    Util.platform.back(window.clientType);
+};
 
 
 $(function () {
