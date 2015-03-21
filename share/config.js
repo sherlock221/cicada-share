@@ -10,7 +10,7 @@ var CONSTANT_TASK = {
     cicada_url: {
         inverte_teacher: 'cicada://inverte/teacher',
         inverte_parent: 'cicada://inverte/parent',
-        inverte_publish: 'cicada://inverte/parent'
+        inverte_publish: 'cicada://page/publish'
 
     }
 }
