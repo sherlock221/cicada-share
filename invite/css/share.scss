@@ -29,16 +29,16 @@ body {
     margin-right: rem(80);
   }
   .dialogue {
-    @include animation(pulse 1s ease 1.1s);
     position: relative;
     display: inline-block;
+    bottom:rem(-16);
     b {
       font-size: rem(40);
     }
     .dialogue-left {
-      height: rem(92);
+      height: rem(94);
       position: absolute;
-      top: rem(2);
+      top: 0;
       left: rem(-56);
     }
     .dialogue-right {

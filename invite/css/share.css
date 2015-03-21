@@ -7,13 +7,6 @@
  * sherlock221b
  * 动画部分常用
  */
-.avatar {
-  -webkit-animation: bounceIn 1s ease 0s 1 both, bounceIn 1s ease 0s 1 both;
-  -ms-animation: bounceIn 1s ease 0s 1 both, bounceIn 1s ease 0s 1 both;
-  -moz-animation: bounceIn 1s ease 0s 1 both, bounceIn 1s ease 0s 1 both;
-  -o-animation: bounceIn 1s ease 0s 1 both, bounceIn 1s ease 0s 1 both;
-  animation: bounceIn 1s ease 0s 1 both, bounceIn 1s ease 0s 1 both; }
-
 .text-one {
   -webkit-animation: print 2s steps(50, end) 0.3s 1 both;
   -ms-animation: print 2s steps(50, end) 0.3s 1 both;
@@ -22,18 +15,18 @@
   animation: print 2s steps(50, end) 0.3s 1 both; }
 
 .text-two {
-  -webkit-animation: fadeIn 1s linear 3.2s 1 both;
-  -ms-animation: fadeIn 1s linear 3.2s 1 both;
-  -moz-animation: fadeIn 1s linear 3.2s 1 both;
-  -o-animation: fadeIn 1s linear 3.2s 1 both;
-  animation: fadeIn 1s linear 3.2s 1 both; }
+  -webkit-animation: print 2s steps(50, end) 2.3s 1 both;
+  -ms-animation: print 2s steps(50, end) 2.3s 1 both;
+  -moz-animation: print 2s steps(50, end) 2.3s 1 both;
+  -o-animation: print 2s steps(50, end) 2.3s 1 both;
+  animation: print 2s steps(50, end) 2.3s 1 both; }
 
 .new {
-  -webkit-animation: swing 1s ease-in-out 4.3s 1 both;
-  -ms-animation: swing 1s ease-in-out 4.3s 1 both;
-  -moz-animation: swing 1s ease-in-out 4.3s 1 both;
-  -o-animation: swing 1s ease-in-out 4.3s 1 both;
-  animation: swing 1s ease-in-out 4.3s 1 both; }
+  -webkit-animation: swing 1s ease-in-out 4.5s 1 both;
+  -ms-animation: swing 1s ease-in-out 4.5s 1 both;
+  -moz-animation: swing 1s ease-in-out 4.5s 1 both;
+  -o-animation: swing 1s ease-in-out 4.5s 1 both;
+  animation: swing 1s ease-in-out 4.5s 1 both; }
 
 @-webkit-keyframes print {
   from {
@@ -73,19 +66,15 @@ body {
     display: inline-block;
     margin-right: 40px; }
   .row .dialogue {
-    -webkit-animation: pulse 1s ease 1.1s;
-    -ms-animation: pulse 1s ease 1.1s;
-    -moz-animation: pulse 1s ease 1.1s;
-    -o-animation: pulse 1s ease 1.1s;
-    animation: pulse 1s ease 1.1s;
     position: relative;
-    display: inline-block; }
+    display: inline-block;
+    bottom: -8px; }
     .row .dialogue b {
       font-size: 20px; }
     .row .dialogue .dialogue-left {
-      height: 46px;
+      height: 47px;
       position: absolute;
-      top: 1px;
+      top: 0;
       left: -28px; }
     .row .dialogue .dialogue-right {
       background-color: #547ed7;

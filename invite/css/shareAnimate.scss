@@ -1,9 +1,8 @@
+@charset "utf-8";
 .avatar{
   $test : bounceIn 1s ease 0s 1 both,
           bounceIn 1s ease 0s 1 both;
-
-  @include animation($test);
-
+//  @include animation($test);
   //    @include animation(pulse 1s ease-in-out 1s, flash 2s ease 2s 1 both);, flash 2s ease 2s 1 both
 }
 
@@ -14,16 +13,22 @@
   @include animation($test);
 }
 .text-two {
-  @include animation(fadeIn 1s linear 3.2s 1 both);
+//  @include animation(fadeIn 1s linear 3.2s 1 both);
+  $test : print 2s steps(50, end) 2.3s 1 both;
+  @include animation($test);
 }
 .new{
-  @include animation(swing 1s ease-in-out 4.3s 1 both);
+  @include animation(swing 1s ease-in-out 4.5s 1 both);
 }
-
-
 
 //打字机
 @include keyframes(print){
   from { width: 0;}
 }
+
+
+
+
+
+
 
