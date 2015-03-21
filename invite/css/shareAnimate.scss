@@ -1,0 +1,13 @@
+.avatar{
+  @include animation(bounceIn 1s ease 0s 1 both);
+  //    @include animation(pulse 1s ease-in-out 1s, flash 2s ease 2s 1 both);, flash 2s ease 2s 1 both
+}
+.text-one{
+  @include animation(fadeIn 1s linear 2.1s 1 both);
+}
+.text-two {
+  @include animation(fadeIn 1s linear 3.2s 1 both);
+}
+.new{
+  @include animation(swing 1s ease-in-out 4.3s 1 both);
+}
