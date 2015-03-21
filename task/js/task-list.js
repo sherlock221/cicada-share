@@ -26,14 +26,14 @@ var  h5_share = "http://www.baidu.com";
 var  goPage = function(url){
      console.log(url);
     switch (url){
-        case "cicada://page/publish"  :
+        case CONSTANT_TASK.cicada_url.inverte_publish  :
             alert("暂无");
             break;
-        case "cicada://inverte/teacher"  :
+        case CONSTANT_TASK.cicada_url.inverte_teacher  :
             Util.platform.sharePgaeByUserId(window.clientType,h5_share,window.shareJson);
 
             break;
-        case "cicada://inverte/parent"  :
+        case CONSTANT_TASK.cicada_url.inverte_parent  :
             Util.platform.sharePgaeByUserId(window.clientType,h5_share,window.shareJson);
             break;
     }

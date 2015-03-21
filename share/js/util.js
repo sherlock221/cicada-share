@@ -14,7 +14,7 @@ var Util = {
             ];
             if (type == "iOS") {
                 var params = Util.location.encodeParam(params);
-                console.log("ios", "cicada//cicada/sharePageByUserId" + params);
+                console.log("ios", CONSTANT_TASK.cicada_share_url.ios_share_url + params);
                 window.location.href = "cicada//cicada/sharePageByUserId" + params;
             }
             //android
