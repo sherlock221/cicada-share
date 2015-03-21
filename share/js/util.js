@@ -41,6 +41,15 @@ var Util = {
                 window.cicada.goPage(viewName);
             }
 
+        },
+
+        back : function(type){
+            if(type == "iOS"){
+                window.location="cicada://cicadaStore/back";
+            }
+            else{
+                window.cicadaStore.back();
+            }
         }
     },
 
