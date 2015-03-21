@@ -1,5 +1,4 @@
 var Ajax = {
-
     getTaskList: function (token, queryTime, callback) {
         jQuery.support.cors = true;
         $.ajax({
@@ -14,8 +13,6 @@ var Ajax = {
             success: callback
         });
     }
-
-
 };
 
 
@@ -25,11 +22,9 @@ var UI = {
 
 
 var  h5_share = "http://www.baidu.com";
-
 //处理button
 var  goPage = function(url){
      console.log(url);
-
     switch (url){
         case "cicada://page/publish"  :
             alert("暂无");
@@ -42,15 +37,13 @@ var  goPage = function(url){
             Util.platform.sharePgaeByUserId(window.clientType,h5_share,window.shareJson);
             break;
     }
-}
+};
 
 
 
 $(function () {
-
     //获得share
     window.shareJson = TemplateAjax.getShareData();
-
     //解析地址
     var params= Util.location.getParams();
     var token = params['token'];
@@ -60,9 +53,6 @@ $(function () {
         return;
     }
     var queryTime = 0;
-
-
-
     //获取任务列表
     Ajax.getTaskList(token, queryTime, function (res) {
         if (res.rtnCode == '0000000') {

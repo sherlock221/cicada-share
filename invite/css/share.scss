@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import '../lib/cicada/src/scss/fun/fun';
+@import '../../lib/cicada/src/scss/fun/fun';
 
 html, body {
   font-size: 20px;
@@ -127,7 +127,7 @@ body {
 }
 
 .warp-bottom {
-  background: url("../images/page-bottom-img.png") no-repeat;
+  background: url("../../share/images/page-bottom-img.png") no-repeat;
   height: rem(145);
   width: 100%;
   background-size: 100%;

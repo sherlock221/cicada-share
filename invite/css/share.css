@@ -131,7 +131,7 @@ body {
       background-color: #af353f; }
 
 .warp-bottom {
-  background: url("../images/page-bottom-img.png") no-repeat;
+  background: url("../../share/images/page-bottom-img.png") no-repeat;
   height: 72.5px;
   width: 100%;
   background-size: 100%;

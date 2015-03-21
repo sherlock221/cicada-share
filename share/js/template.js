@@ -14,7 +14,6 @@ var TemplateAjax = {
             });
 
             return result;
-
         }
 
 }
