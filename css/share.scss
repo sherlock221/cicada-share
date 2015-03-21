@@ -19,7 +19,7 @@ body {
 }
 
 .row {
-  display: block!important;
+  display: block !important;
   .avatar {
     height: rem(120);
     width: rem(120);
@@ -27,11 +27,11 @@ body {
     border: none;
     display: inline-block;
     margin-right: rem(60);
-    @include animation(rotateIn 2s linear 0.5s,$animationName2);
-//    @include animation(pulse 1s ease-in-out 1s, flash 2s ease 2s 1 both);, flash 2s ease 2s 1 both
+    @include animation(rotateIn 2s linear 0.5s, $animationName2);
+    //    @include animation(pulse 1s ease-in-out 1s, flash 2s ease 2s 1 both);, flash 2s ease 2s 1 both
   }
   .dialogue {
-    @include animation(pulse 2s ease 2.6s,$animationName2);
+    @include animation(pulse 2s ease 2.6s, $animationName2);
     position: relative;
     display: inline-block;
     b {
@@ -64,7 +64,7 @@ body {
     text-align: left;
     display: block;
     .text-one {
-      @include animation(slideOutLeft 0.5s linear 4.7s,$animationName2);
+      @include animation(slideOutLeft 0.5s linear 4.7s, $animationName2);
       font-size: rem(30);
       //      text-align: center;
       line-height: rem(60);
@@ -74,7 +74,7 @@ body {
       }
     }
     .text-two {
-      @include animation(slideOutLeft 0.6s linear 5.3s,$animationName2);
+      @include animation(slideOutLeft 0.6s linear 5.3s, $animationName2);
       font-size: rem(40);
       line-height: rem(65);
       .new {
@@ -87,7 +87,7 @@ body {
         font-style: normal;
         text-align: center;
         margin: 0 rem(10);
-        @include animation(swing 2s ease-in-out 6s,$animationName2);
+        @include animation(swing 2s ease-in-out 6s, $animationName2);
       }
     }
   }
@@ -120,7 +120,7 @@ body {
     color: #fff;
     font-size: rem(32) !important;
     border-radius: 4px;
-    &:hover{
+    &:hover {
       background-color: #af353f;
     }
   }
@@ -206,29 +206,32 @@ body {
   width: rem(432);
   height: rem(88);
   line-height: rem(88);
-  color: #fff!important;
+  color: #fff !important;
   font-size: rem(32);
   border-radius: 4px;
   box-shadow: 1px 3px 1px #20283f;
 }
 
+$btn-green: #47c450;
 .btn-green {
-  background-color: #47c450;
+  background-color: $btn-green;
   &:hover {
-    background-color: #3eaf47;
+    background-color: darken($btn-green, 10%);
   }
 }
 
+$btn-blue: #547ed7;
 .btn-blue {
-  background-color: #547ed7;
+  background-color: $btn-blue;
   &:hover {
-    background-color: #4765af;
+    background-color: darken($btn-blue, 10%);
   }
 }
 
+$btn－red: #e7505e;
 .btn-red {
-  background-color: #e7505e;
+  background-color: $btn－red;
   &:hover {
-    background-color: #af3f49;
+    background-color: darken($btn－red, 10%);
   }
 }
