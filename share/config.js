@@ -11,6 +11,5 @@ var CONSTANT_TASK = {
         inverte_teacher: 'cicada://inverte/teacher',
         inverte_parent: 'cicada://inverte/parent',
         inverte_publish: 'cicada://page/publish'
-
     }
 }
