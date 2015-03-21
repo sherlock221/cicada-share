@@ -20,7 +20,7 @@ var Util = {
             //android
             else {
                 console.log("android", temp);
-                window.cicada.sharePgaeByUserId(url, temp);
+                window.cicada.sharePageByUserId(url, temp);
             }
         },
 
