@@ -87,6 +87,16 @@ body {
   }
 }
 
+
+
+
+.wrap-print{
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+
+}
+
 .share-input {
   color: #64769c;
   font-size: rem(24);
@@ -222,10 +232,10 @@ $btn-blue: #547ed7;
   }
 }
 
-$btn－red: #e7505e;
+$btn-red: #e7505e;
 .btn-red {
-  background-color: $btn－red;
+  background-color: $btn-red;
   &:hover {
-    background-color: darken($btn－red, 10%);
+    background-color: darken($btn-red, 10%);
   }
 }
