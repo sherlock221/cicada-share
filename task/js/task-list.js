@@ -21,7 +21,7 @@ var UI = {
 };
 
 
-var  h5_share = "http://www.baidu.com";
+var  h5_share = "http://imzhiliao.com?targetUserType=0";
 //处理button
 var  goPage = function(url){
      console.log(url);
