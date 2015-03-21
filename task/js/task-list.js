@@ -27,7 +27,7 @@ var  goPage = function(url){
      console.log(url);
     switch (url){
         case CONSTANT_TASK.cicada_url.inverte_publish  :
-            alert("暂无");
+            Util.platform.goPage(window.clientType,"publish");
             break;
         case CONSTANT_TASK.cicada_url.inverte_teacher  :
             Util.platform.sharePgaeByUserId(window.clientType,h5_share,window.shareJson);

@@ -20,8 +20,27 @@ var Util = {
             //android
             else {
                 console.log("android", temp);
-                window.cicada.sharePgaeByUserId(url, shareJson);
+                window.cicada.sharePgaeByUserId(url, temp);
             }
+        },
+
+        goPage : function(type,viewName){
+            var params = [
+                {
+                    key: "viewName",
+                    value: viewName
+                }
+            ];
+            if (type == "iOS") {
+                var params = Util.location.encodeParam(params);
+                console.log("ios", "cicada//cicada/page/goPage" + params);
+                window.location.href = "cicada//cicada/page/goPage" + params;
+            }
+            //android
+            else {
+                window.cicada.goPage(viewName);
+            }
+
         }
     },
 
