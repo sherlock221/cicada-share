@@ -20,7 +20,6 @@
         "img": ""
     },
 
-
     "QZone": {
 
         "title": "",
@@ -29,14 +28,11 @@
         "img": ""
     },
 
-
     "ShortMessage":{
         "title": "",
         "content": "知了，一款让教师家长沟通更加轻松便捷的软件。快来尝试新的沟通方式吧~",
         "desc": "短信",
         "img": ""
-
-
     },
 
     "WechatMoments" :{
