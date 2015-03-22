@@ -7,26 +7,33 @@
  * sherlock221b
  * 动画部分常用
  */
+.avatar:hover {
+  -webkit-animation: bounceIn 1s ease 0s 1 both, bounceIn 1s ease 0s 1 both;
+  -ms-animation: bounceIn 1s ease 0s 1 both, bounceIn 1s ease 0s 1 both;
+  -moz-animation: bounceIn 1s ease 0s 1 both, bounceIn 1s ease 0s 1 both;
+  -o-animation: bounceIn 1s ease 0s 1 both, bounceIn 1s ease 0s 1 both;
+  animation: bounceIn 1s ease 0s 1 both, bounceIn 1s ease 0s 1 both; }
+
 .text-one {
-  -webkit-animation: print 2s steps(50, end) 0.3s 1 both;
-  -ms-animation: print 2s steps(50, end) 0.3s 1 both;
-  -moz-animation: print 2s steps(50, end) 0.3s 1 both;
-  -o-animation: print 2s steps(50, end) 0.3s 1 both;
-  animation: print 2s steps(50, end) 0.3s 1 both; }
+  -webkit-animation: print 3s steps(50, end) 0.5s 1 both;
+  -ms-animation: print 3s steps(50, end) 0.5s 1 both;
+  -moz-animation: print 3s steps(50, end) 0.5s 1 both;
+  -o-animation: print 3s steps(50, end) 0.5s 1 both;
+  animation: print 3s steps(50, end) 0.5s 1 both; }
 
 .text-two {
-  -webkit-animation: print 2s steps(50, end) 2.3s 1 both;
-  -ms-animation: print 2s steps(50, end) 2.3s 1 both;
-  -moz-animation: print 2s steps(50, end) 2.3s 1 both;
-  -o-animation: print 2s steps(50, end) 2.3s 1 both;
-  animation: print 2s steps(50, end) 2.3s 1 both; }
+  -webkit-animation: print 2s steps(50, end) 3.5s 1 both;
+  -ms-animation: print 2s steps(50, end) 3.5s 1 both;
+  -moz-animation: print 2s steps(50, end) 3.5s 1 both;
+  -o-animation: print 2s steps(50, end) 3.5s 1 both;
+  animation: print 2s steps(50, end) 3.5s 1 both; }
 
 .new {
-  -webkit-animation: swing 1s ease-in-out 4.5s 1 both;
-  -ms-animation: swing 1s ease-in-out 4.5s 1 both;
-  -moz-animation: swing 1s ease-in-out 4.5s 1 both;
-  -o-animation: swing 1s ease-in-out 4.5s 1 both;
-  animation: swing 1s ease-in-out 4.5s 1 both; }
+  -webkit-animation: swing 1.5s ease-in-out 6s 6 both;
+  -ms-animation: swing 1.5s ease-in-out 6s 6 both;
+  -moz-animation: swing 1.5s ease-in-out 6s 6 both;
+  -o-animation: swing 1.5s ease-in-out 6s 6 both;
+  animation: swing 1.5s ease-in-out 6s 6 both; }
 
 @-webkit-keyframes print {
   from {
@@ -63,8 +70,7 @@ body {
     width: 60px;
     border-radius: 50%;
     border: none;
-    display: inline-block;
-    margin-right: 40px; }
+    display: inline-block; }
   .row .dialogue {
     position: relative;
     display: inline-block;
@@ -137,14 +143,15 @@ body {
     line-height: 18px; }
   .share-input button {
     line-height: 44px;
+    height: 44px;
     width: 216px;
     background-color: #e7505e;
     border: none;
     color: #fff;
     font-size: 16px !important;
-    border-radius: 4px; }
-    .share-input button:hover {
-      background-color: #af353f; }
+    border-radius: 4px;
+    padding: 0;
+    cursor: pointer; }
 
 .warp-bottom {
   background: url("../images/bottom-img.png") no-repeat;

@@ -26,7 +26,7 @@ body {
     border-radius: 50%;
     border: none;
     display: inline-block;
-    margin-right: rem(80);
+//    margin-right: rem(80);
   }
   .dialogue {
     position: relative;
@@ -118,15 +118,15 @@ body {
   }
   button {
     line-height: rem(88);
+    height: rem(88);
     width: rem(432);
     background-color: #e7505e;
     border: none;
     color: #fff;
     font-size: rem(32) !important;
     border-radius: 4px;
-    &:hover {
-      background-color: #af353f;
-    }
+    padding:0;
+    cursor: pointer;
   }
 }
 
