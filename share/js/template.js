@@ -1,9 +1,6 @@
 var TemplateAjax = {
-
         getShareData : function(){
-
             var result  ="";
-
             $.ajax({
                 type: "get",
                 url: "../share/json/share.json",
@@ -12,8 +9,21 @@ var TemplateAjax = {
                     result  = res;
                 }
             });
-
             return result;
         }
-
 }
+
+
+var TemplateEvent = {
+
+    init : function(){
+
+        //
+
+    }
+}
+
+
+
+
+TemplateEvent.init();
