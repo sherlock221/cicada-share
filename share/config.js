@@ -22,5 +22,6 @@ var CONSTANT_ENV ={
 
 //资源地址
 var CONSTANT_RES = {
+    //邀请页面
     invite : CONSTANT_ENV.RES+"/cicadaShare/invite/invite.html"
 }
