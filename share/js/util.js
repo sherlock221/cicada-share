@@ -33,7 +33,7 @@ var Util = {
             ];
             if (type == "iOS") {
                 var params = Util.location.encodeParam(params);
-                console.log("ios", "cicada//cicada/page/goPage" + params);
+                console.log("ios", "cicada://cicada/page/goPage" + params);
                 window.location.href = "cicada//cicada/page/goPage" + params;
             }
             //android
