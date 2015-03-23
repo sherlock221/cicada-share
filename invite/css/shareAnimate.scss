@@ -6,7 +6,6 @@
 //      @include animation(pulse 1s ease-in-out 1s, flash 2s ease 2s 1 both);
 }
 
-
 .text-one{
   $test : print 1.2s steps(50, end) 0.3s 1 both;
   @include animation($test);
