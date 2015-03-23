@@ -3,7 +3,7 @@ var Ajax = {
         jQuery.support.cors = true;
         $.ajax({
             type: "post",
-            url: CONTSTANT_URL.credit + '/task/getTaskList',
+            url: CONSTANT_ENV.credit + '/task/getTaskList',
             dataType: 'json',
             data: {
                 "token": token,
@@ -20,8 +20,8 @@ var UI = {
     content: $("#content")
 };
 
+var  h5_share = CONSTANT_RES.invite;
 
-var  h5_share = "http://imzhiliao.com?targetUserType=0";
 //处理button
 var  goPage = function(url){
      console.log(url);
