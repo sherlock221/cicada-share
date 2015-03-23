@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>art-template</title>
+    <script src="node_modules/art-template/dist/template.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="task/data/credit/task/getTaskList.json"></script>
+</head>
+<body>
+<h1>不转义HTML</h1>
+
+<div id="content"></div>
+<script id="test" type="text/html">
+    <p>不转义：{{#value}}</p>
+    <p>默认转义： {{value}}</p>
+</script>
+
+<script>
+    var data = {
+        value: '<span style="color:#F00">hello world!</span>'
+    };
+    var html = template('test', data);
+    $('#content').html (html);
+</script>
+</body>
+</html>

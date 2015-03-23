@@ -32,6 +32,8 @@ body {
     position: relative;
     display: inline-block;
     bottom:rem(-16);
+    margin-left: rem(70);
+
     b {
       font-size: rem(40);
     }
@@ -116,8 +118,7 @@ body {
     display: block;
     line-height: 18px;
   }
-  a {
-    line-height: rem(88);
+  button {
     height: rem(88);
     width: rem(432);
     background-color: #e7505e;
@@ -125,8 +126,10 @@ body {
     color: #fff;
     font-size: rem(32) !important;
     border-radius: 4px;
-    padding:0;
-    cursor: pointer;
+    &:hover {
+      color: #fff;
+      background-color: #af353f;
+    }
   }
 }
 
@@ -182,7 +185,7 @@ body {
   }
   .tips-info {
     display: inline-block;
-    margin-bottom: rem(20);
+    margin-bottom: rem(50);
     color: #7c89a5;
     font-size: rem(26);
     b {
@@ -192,7 +195,7 @@ body {
   }
   .dowhat {
     .btn-blue {
-      margin-bottom: rem(30);
+//      margin-bottom: rem(30);
     }
   }
 
