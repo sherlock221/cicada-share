@@ -34,7 +34,7 @@ var Util = {
             if (type == "iOS") {
                 var params = Util.location.encodeParam(params);
                 console.log("ios", "cicada://cicada/page/goPage" + params);
-                window.location.href = "cicada//cicada/page/goPage" + params;
+                window.location.href = "cicada://cicada/page/goPage" + params;
             }
             //android
             else {
@@ -45,7 +45,8 @@ var Util = {
 
         back : function(type){
             if(type == "iOS"){
-                window.location="cicada://cicadaStore/back";
+                console.log("ios", "cicada://cicadaStore/back");
+                window.location.href="cicada://cicadaStore/back";
             }
             else{
                 window.cicadaStore.back();
