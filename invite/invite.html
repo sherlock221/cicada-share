@@ -16,12 +16,9 @@
     <link rel="stylesheet" href="css/waves.css"/>
     <link rel="stylesheet" href="css/share.css">
     <title>知了-理解源自沟通</title>
-    <script src="../share/config.js"></script>
 </head>
 <body>
 <div class="warp">
-
-
     <div class="row">
         <img src="images/avatar.png" class="avatar text-left"/>
         <div class="dialogue">
@@ -41,28 +38,18 @@
         <form action="" class="share-input">
             <div class="tips">输入手机号,领取奖励</div>
             <input type="tel" placeholder="请输入手机号" class=""/>
-            <button type="button" class="waves-effect waves-button">领取奖励</button>
+            <button type="button" class="getValue waves-effect waves-button">领取奖励</button>
         </form>
     </div>
 </div>
 <div class="warp-bottom"></div>
-<script>
-    (function (doc, win) {
-        var docEl = doc.documentElement,
-                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
-                recalc = function () {
-                    var clientWidth = docEl.clientWidth;
-                    if (!clientWidth) return;
-                    docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
-                };
-        if (!doc.addEventListener) return;
-        win.addEventListener(resizeEvt, recalc, false);
-        doc.addEventListener('DOMContentLoaded', recalc, false);
-    })(document, window);
-</script>
+<script src="../share/config.js"></script>
+<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+<script src="../share/js/util.js"></script>
 <script src="js/waves.min.js"></script>
-<script type="text/javascript">
-    Waves.displayEffect();
-</script>
+<script src="../share/js/template.js"></script>
+<script src="../lib/cicada/src/js/core/hammer/hammer.min.js"></script>
+<script src="../lib/cicada/src/js/core/hammer/jquery.hammer.js"></script>
+<script src="js/invite.js"></script>
 </body>
 </html>
