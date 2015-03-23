@@ -12,10 +12,10 @@ $('#share').hammer({}).bind("tap", function () {
             var host = window.location.protocol + "//" + window.location.host;
             // 微信分享的数据
             var wxData = {
-                "imgUrl": host + '/Recruitment/imgs/logo-home.jpg',
-                "link": host + '/Recruitment/index.html',
-                "desc": "万万没想到,西安还有这样逼格的习悦！",
-                "title": "万万没想到,西安还有这样逼格的习悦！"
+                "imgUrl": host + '',
+                "link": host + '',
+                "desc": "",
+                "title": ""
             };
 
             // 分享的回调
