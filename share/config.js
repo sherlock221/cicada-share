@@ -17,8 +17,9 @@ var CONSTANT_TASK = {
 //测试环境
 var CONSTANT_ENV ={
         RES : "http://10.10.68.11",
-        credit : "http://10.10.68.11:8080/credit"
-}
+        credit : "http://10.10.68.11:8080/credit",
+        local:  "http://172.16.130.218:8080/uc"
+};
 
 //资源地址
 var CONSTANT_RES = {

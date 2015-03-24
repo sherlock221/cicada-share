@@ -20,16 +20,16 @@
 <body>
 <div class="warp">
     <div class="row">
-        <img src="images/avatar.png" class="avatar text-left"/>
+        <img src="" class="avatar text-left userIcon"/>
         <div class="dialogue">
-            <img src="../share/images/sprint-icon.png" alt="" class="dialogue-left"/><span class="dialogue-right"><b>Hi,</b>我是王丹老师</span>
+            <img src="../share/images/sprint-icon.png" alt="" class="dialogue-left "/><span class="dialogue-right"><b>Hi,</b>我是<span class="userName text-ellipsis"></span></span>
         </div>
     </div>
     <div class="row">
         <div class="share-info ">
-            <p class=" wrap-print text-one">正在和<b>4</b>位老师,<b>20</b>位家长使用知了</p>
+            <p class=" wrap-print text-one">正在和<b class="parentCount"></b>位老师,<b class="teacherCount"></b>位家长使用知了</p>
             <div class=" wrap-print text-two">
-                用知了一起使用知了<br>
+                用知了一起使用知了 <br>
                 快尝试<i class="new">新</i>的沟通方式吧!
             </div>
         </div>
@@ -37,11 +37,15 @@
     <div class="row">
         <form action="" class="share-input">
             <div class="tips">输入手机号,领取奖励</div>
-            <input type="tel" placeholder="请输入手机号" class=""/>
-            <button type="button" class="getValue waves-effect waves-button">领取奖励</button>
+            <input type="tel" placeholder="请输入手机号" class="phone"/>
+            <button type="button" class="getValueBtn waves-effect waves-button">领取奖励</button>
         </form>
     </div>
 </div>
+<!--&lt;!&ndash;弹框&ndash;&gt;-->
+<!--<div class="topBox">-->
+    <!--<p class="error-tip text-center"></p>-->
+<!--</div>-->
 <div class="warp-bottom"></div>
 <script src="../share/config.js"></script>
 <script src="../node_modules/jquery/dist/jquery.min.js"></script>
