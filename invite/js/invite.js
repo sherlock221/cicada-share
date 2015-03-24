@@ -1,4 +1,3 @@
-//?targetUserType=0&uId=1002&systemTime=187123122&version=1.3.1.65
 //http://172.16.140.28:7777/cicadaShare/invite/invite.html?targetUserType=0&uId=1002&systemTime=187123122&version=1.3.1.65
 //路径   user/checkUserExist      参数  String  phone    返回值  boolean  isExist   true：已注册
 //路径  relation/inviteRecord  参数   long userId,String phone,int type  0:邀请注册  1：邀请加班    返回值   int credit
@@ -11,7 +10,6 @@ var Ajax = {
         } else {
             $.ajax({
                 type: "post",
-                //?targetUserType=0&uId=1002&systemTime=187123122&version=1.3.1.65
                 url: CONSTANT_ENV.local + '/user/checkUserExist' + '?phone=' + $('.phone').val(),
                 dataType: 'json',
                 data: {
@@ -26,12 +24,12 @@ var Ajax = {
     },
     getUserInfor: function (userId, callback) {
         $.ajax({
-            async:'false',
+            async: 'false',
             type: "post",
             url: CONSTANT_ENV.local + '/relation/queryUserInfoAndUserCount',
             dataType: 'json',
             data: {
-                userId:userId
+                userId: userId
             },
             success: callback,
             error: function () {
@@ -48,9 +46,9 @@ var UI = {
     parentCount: $('.parentCount'),
     teacherCount: $('.teacherCount'),
 
+
     phone: $('.phone').val(),
-    getValueBtn: $('.getValueBtn'),
-    errorTip: $('.error-tip')
+    getValueBtn: $('.getValueBtn')
 };
 
 
@@ -64,11 +62,11 @@ $(function () {
                 if (res.bizData.isExist) {
                     //已注册
                     console.log('ok,已注册');
-                    window.location.href = 'http://localhost:7777/cicadaShare/invite/taskDownload.html';
+                    window.location.href = 'http://172.16.140.28:7777/cicadaShare/invite/taskDownload.html';
                 } else {
                     //未注册
                     console.log('error,未注册');
-                    window.location.href = 'http://localhost:7777/cicadaShare/invite/shareDownload.html';
+                    window.location.href = 'http://172.16.140.28:7777/cicadaShare/invite/shareDownload.html';
                     console.log(window.location.href + 2)
                 }
             } else {
@@ -80,31 +78,13 @@ $(function () {
     //获取Uid
     var Id = Util.location.getParams();
     //var userId = parseInt(Id.uId);
-         var userId =27902;
-    Ajax.getUserInfor(userId,function (res) {
-        UI.userIcon.attr('src',res.bizData.userIcon);
+    var userId = 27902;
+    Ajax.getUserInfor(userId, function (res) {
+        UI.userIcon.attr('src', res.bizData.userIcon);
         UI.userName.html(res.bizData.userName);
         UI.parentCount.html(res.bizData.parentCount);
         UI.teacherCount.html(res.bizData.teacherCount);
     });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 //微信分享
