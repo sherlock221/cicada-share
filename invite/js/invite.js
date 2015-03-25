@@ -39,7 +39,7 @@ var Ajax = {
 
     //邀请用户
     inviteRecord: function (userId,phone,callback) {
-        phone = parseInt(phone);
+        userId = parseInt(userId);
         $.ajax({
             type: "post",
             url: CONSTANT_ENV.local + '/relation/inviteRecord',
@@ -83,6 +83,7 @@ Ajax.getUserInfo(userId, function (res) {
 
         //存入storage
         Util.storage.setLgObj("user",res.bizData);
+        Util.storage.setLgObj("shareUrl",window.location.href);
     }
 
 });
@@ -130,5 +131,6 @@ $(function () {
 
 
     });
+
 });
 
