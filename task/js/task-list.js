@@ -20,7 +20,7 @@ var UI = {
     content: $("#content")
 };
 
-var  h5_share = CONSTANT_RES.invite;
+var  h5_share =  CONSTANT_RES.invite +"?targetUserType=0";
 
 //处理button
 var  goPage = function(url){
@@ -49,6 +49,7 @@ $(function () {
     //解析地址
     var params= Util.location.getParams();
     var token = params['token'];
+
     window.clientType  = params['clientType'];
     if(!token){
         alert('token不能为空！');
@@ -64,8 +65,6 @@ $(function () {
             alert(res.msg);
         }
     });
-
-
 
 });
 

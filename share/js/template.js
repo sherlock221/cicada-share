@@ -18,7 +18,10 @@ var TemplateEvent = {
 
     init : function(){
         //wavesBtn初始化
-        Waves.displayEffect();
+        if(window.Waves){
+            Waves.displayEffect();
+        }
+
         TemplateEvent.response();
         TemplateEvent.weixinShare();
     },
@@ -96,7 +99,6 @@ var TemplateEvent = {
     }
 };
 
-TemplateEvent.init();
 
 $(function(){
     TemplateEvent.init();
