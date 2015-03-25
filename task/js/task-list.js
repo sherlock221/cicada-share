@@ -56,6 +56,8 @@ $(function () {
         return;
     }
     var queryTime = 0;
+
+
     //获取任务列表
     Ajax.getTaskList(token, queryTime, function (res) {
         if (res.rtnCode == '0000000') {

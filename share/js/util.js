@@ -34,24 +34,18 @@ var Util = {
         },
 
         sharePgaeByUserId: function (type, url, sjson) {
-            var temp = JSON.stringify(sjson);
-            var params = [
-                {
-                    key: "url",
-                    value: url
-                },
-                {
-                    key: "shareJson",
-                    value: temp
-                }
-            ];
+
             if (type == "iOS") {
-                var params = Util.location.encodeParam(params);
-                console.log("ios", CONSTANT_TASK.cicada_share_url.ios_share_url + params);
-                window.location.href = CONSTANT_TASK.cicada_share_url.ios_share_url + params;
+
+                sjson.url = url;
+                var temp = JSON.stringify(sjson);
+                var  encodeJson = encodeURI(temp);
+                console.log("ios", CONSTANT_TASK.cicada_share_url.ios_share_url +"?json="+encodeJson);
+                window.location.href = CONSTANT_TASK.cicada_share_url.ios_share_url +"?json="+encodeJson;
             }
             //android
             else {
+                var temp = JSON.stringify(sjson);
                 console.log("android", temp);
                 window.cicada.sharePageByUserId(url, temp);
             }
