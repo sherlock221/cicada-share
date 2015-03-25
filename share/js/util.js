@@ -1,5 +1,38 @@
 var Util = {
+
+
     platform: {
+
+        openCiacada : function(){
+            var isrefresh =  Util.location.getParams().refresh;
+            if(isrefresh == 1) {
+                return
+            }
+
+            window.location.href = "cicada://public/page/index";
+            window.setTimeout(function () {
+                // 附加一个特殊参数，用来标识这次刷新不要再调用cicada://
+                window.location.href += '?refresh=1'
+            }, 500);
+
+        },
+
+        checkMobile : function () {
+            var ua = window.navigator.userAgent.toLowerCase();
+            if (ua.indexOf("qq/") > -1) {
+                return {"message": "qq下载请点击右上角在浏览器中打开", "type": "other"}
+            }
+            else if (ua.match(/MicroMessenger/i) == 'micromessenger') {
+                return {"message": "微信下载请点击右上角在浏览器中打开", "type": "other"}
+            }
+            else if(navigator.userAgent.match(/Android/i)) {
+                return {"type":"Android"};
+            }
+            else if( navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
+                return {"type":"iOS"};
+            }
+        },
+
         sharePgaeByUserId: function (type, url, sjson) {
             var temp = JSON.stringify(sjson);
             var params = [
@@ -132,3 +165,6 @@ var Util = {
         }
     }
 };
+
+
+

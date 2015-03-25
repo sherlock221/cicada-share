@@ -47,7 +47,8 @@ var Ajax = {
             data: {
                 userId: userId,
                 type : 0,
-                phone : phone
+                phone : phone,
+                classCode : ""
             },
             success: callback,
             error: function () {
@@ -113,7 +114,7 @@ $(function () {
                         //邀请
                         Ajax.inviteRecord(userId,UI.phone.val(),function(res){
                             if (res.rtnCode == '0000000') {
-                                window.location.href = './download.html';
+                                window.location.href = './download.html?phone='+phone;
                             }
                             else{
                                 alert(res.msg);

@@ -18,6 +18,7 @@
     <script src="../share/config.js"></script>
     <script type="text/javascript"  src="../lib/cicada/src/js/core/zepto/zepto-1.1.6.js"></script>
     <script type="text/javascript"  src="../lib/cicada/src/js/core/hammer/hammer.zp.js"></script>
+    <script type="text/javascript"  src="../lib/cicada/src/js/market/weixin.js"></script>
     <script type="text/javascript" src="../share/js/util.js"></script>
 
 </head>
@@ -27,18 +28,18 @@
         <img id="head"  src="" class="avatar"/>
     </div>
     <div class="alert-info row">
-        <span>恭喜您获得 <b id="credit"></b>活跃值奖励</span>
+        <span>恭喜您获得 <b id="credit">60</b>活跃值奖励</span>
 
         <p>使用知了获取更多活跃值</p>
 
         <p>众多精美礼品等您兑换</p>
     </div>
     <div class="row tips-info">
-        <span>活跃值已放入账户<b class="part-number">13991992929</b></span>
+        <span>活跃值已放入账户<b class="part-number" id="phoneNum"></b></span>
     </div>
     <div class="row download">
             <span class="waves-effect waves-button">
-                <a href="#" class="btn btn-green">下载知了</a>
+                <a href="javascript:void(0);" id="downBtn" class="btn btn-green">下载知了</a>
             </span>
     </div>
 </div>

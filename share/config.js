@@ -18,8 +18,10 @@ var CONSTANT_TASK = {
 var CONSTANT_ENV ={
         RES : "http://10.10.68.11",
         credit : "http://10.10.68.11:10000/credit",
-        local:  "http://10.10.68.11:10000/uc"
+//        local:  "http://10.10.68.11:10000/uc"
+        local:  "http://172.16.130.218:8080/uc"
 };
+
 //var CONSTANT_ENV ={
 //        RES : "http://10.10.68.11",
 //        credit : "http://10.10.68.11:8080/credit",
