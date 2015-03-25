@@ -88,23 +88,23 @@ var Util = {
 
     storage: {
         getSgObj: function (key) {
-            var obj = $window.sessionStorage.getItem(key);
+            var obj = window.sessionStorage.getItem(key);
             return JSON.parse(obj);
         },
         setSgObj: function (key, value) {
-            return $window.sessionStorage.setItem(key, JSON.stringify(value));
+            return window.sessionStorage.setItem(key, JSON.stringify(value));
         },
         getSg: function (key) {
-            return $window.sessionStorage.getItem(key);
+            return window.sessionStorage.getItem(key);
         },
         setSg: function (key, value) {
-            $window.sessionStorage.setItem(key, value);
+            window.sessionStorage.setItem(key, value);
         },
         remove: function (key) {
-            $window.sessionStorage.removeItem(key);
+            window.sessionStorage.removeItem(key);
         },
         removeSg: function (key) {
-            $window.sessionStorage.removeItem(key);
+            window.sessionStorage.removeItem(key);
         },
         loading: function (toggle) {
             if (toggle) {
@@ -115,20 +115,20 @@ var Util = {
             }
         },
         getLgObj: function (key) {
-            var obj = $window.localStorage.getItem(key);
+            var obj = window.localStorage.getItem(key);
             return JSON.parse(obj);
         },
         setLgObj: function (key, value) {
-            return $window.localStorage.setItem(key, JSON.stringify(value));
+            return window.localStorage.setItem(key, JSON.stringify(value));
         },
         getLg: function (key) {
-            return $window.localStorage.getItem(key);
+            return window.localStorage.getItem(key);
         },
         setLg: function (key, value) {
-            $window.localStorage.setItem(key, value);
+            window.localStorage.setItem(key, value);
         },
         removeLg: function (key) {
-            $window.localStorage.removeItem(key);
+            window.localStorage.removeItem(key);
         }
     }
 };

@@ -13,40 +13,34 @@
     <meta name="renderer" content="webkit">
     <link rel="stylesheet" href="../lib/cicada/dist/css/module.css"/>
     <link rel="stylesheet" href="css/get-active-value.css">
-    <title>获取活跃值</title>
+    <title>测试页面</title>
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="../node_modules/art-template/dist/template-native.js"></script>
     <script src="../share/config.js"></script>
     <script src="../share/js/template.js"></script>
     <script src="../share/js/util.js"></script>
-    <script src="js/task-list.js"></script>
 
 </head>
 <body>
 <!--<div class="navbar">-->
-    <!--<a href="javascript:goBack()"><i class="icon l-arrow ib"></i></a>-->
-    <!--<span>获取活跃值</span>-->
+<!--<a href="javascript:goBack()"><i class="icon l-arrow ib"></i></a>-->
+<!--<span>获取活跃值</span>-->
 <!--</div>-->
-<div id="content"></div>
-<script id="task-tem" type="text/html">
-    <%for (var i=0;i
-    <bizData.length;i++) {%>
-    <div class="section fx-row fx-row-center">
-        <div class="left ">
-            <i class="icon <%=bizData[i].image %>"></i>
-        </div>
-        <div class="fx-col-1 ">
-            <h3><%=bizData[i].title %></h3>
-            <p class="text-ellipsis"><%=bizData[i].ruleDesc %></p>
-            <span><%=bizData[i].rewardDesc %></span>
-        </div>
-        <div class="right">
-            <%if(bizData[i].url) {%>
-                <a href="javascript:goPage('<%=bizData[i].url %>')" class="btn btn-goto ntp">前往</a>
-            <%}%>
-        </div>
-    </div>
-    <%}%>
-</script>
+
+<button type="button" onclick="Util.platform.goPage('iOS','myCredit');">去活跃值</button>
+<button type="button" onclick="Util.platform.goPage('iOS','publish');">去发布</button>
+
+<button type="button" onclick="testLocation();">打开知了</button>
 
 </body>
+<script type="text/javascript">
+
+    var testLocation = function () {
+
+        window.location.href = 'cicada://public/page/index';
+        window.setTimeout(function () {
+            alert("超时");
+        }, 700);
+    }
+
+</script>
