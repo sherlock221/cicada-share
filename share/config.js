@@ -8,6 +8,7 @@ var CONSTANT_TASK = {
         inverte_parent: 'cicada://inverte/parent',
         inverte_publish: 'cicada://page/publish'
     },
+
     cicada_share_url:{
         ios_share_url:'cicada://cicada/sharePageByUserId'
     }

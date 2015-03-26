@@ -44,6 +44,7 @@ var TemplateEvent = {
     weixinShare : function(){
         var host = window.location.protocol + "//" + window.location.host;
         if (typeof(WeixinApi) != "undefined") {
+            alert("支持！");
             //分享
             WeixinApi.ready(function (Api) {
                 // 微信分享的数据
@@ -67,10 +68,12 @@ var TemplateEvent = {
                     // 分享操作开始之前
                     ready: function () {
 //                        MobileUI.sharLayer.hide();
+                        alert("开始分享!");
                     },
                     // 分享被用户自动取消
                     cancel: function (resp) {
                         // 你可以在你的页面上给用户一个小Tip，为什么要取消呢？
+                        alert("取消!");
                     },
                     // 分享失败了
                     fail: function (resp) {

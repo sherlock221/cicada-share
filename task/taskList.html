@@ -43,7 +43,22 @@
         </div>
         <div class="right">
             <%if(bizData[i].url) {%>
-                <a href="javascript:goPage('<%=bizData[i].url %>')" class="btn btn-goto ntp">前往</a>
+
+
+            <%if(bizData[i].maxNum) {%>
+                <%if(bizData[i].maxNum != bizData[i].completedNum ) {%>
+                        <a href="javascript:goPage('<%=bizData[i].url %>')" class="btn btn-goto ntp">前往</a>
+                <%}%>
+            <%}%>
+
+
+            <%if(!bizData[i].maxNum) {%>
+                    <a href="javascript:goPage('<%=bizData[i].url %>')" class="btn btn-goto ntp">前往</a>
+            <%}%>
+
+
+
+
             <%}%>
         </div>
     </div>
