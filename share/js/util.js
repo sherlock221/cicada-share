@@ -4,15 +4,16 @@ var Util = {
     platform: {
 
         openCiacada : function(){
-            var isrefresh =  Util.location.getParams().refresh;
-            if(isrefresh == 1) {
-                return
-            }
+//            var isrefresh =  Util.location.getParams().refresh;
+//            if(isrefresh == 1) {
+//                return
+//            }
+            window.location.href = 'cicada://public/page/index';
 
-            window.location.href = "cicada://public/page/index";
             window.setTimeout(function () {
                 // 附加一个特殊参数，用来标识这次刷新不要再调用cicada://
-                window.location.href += '?refresh=1'
+           //     window.location.href += '?refresh=1'
+                alert("超时");
             }, 500);
 
         },

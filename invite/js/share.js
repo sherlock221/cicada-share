@@ -15,6 +15,13 @@ var  UI = {
 var  user  = Util.storage.getLgObj("user");
 
 $(function(){
+
+    var img =  " ../share/images/default_image_head.png";
+    if(user.userIcon){
+        img = user.userIcon;
+    }
+
+    UI.head.attr('src',img);
     //加入
     UI.head.attr("src",user.userIcon);
 

@@ -77,7 +77,14 @@ var targetUserType = parseInt(params.targetUserType);
 //同步拉取用户数据
 Ajax.getUserInfo(userId, function (res) {
     if(res.rtnCode == "0000000"){
-        UI.userIcon.attr('src', res.bizData.userIcon);
+
+        var img =  " ../share/images/default_image_head.png";
+        if(res.bizData.userIcon){
+            img = res.bizData.userIcon;
+        }
+        UI.userIcon.attr('src',img);
+
+
         UI.userName.html(res.bizData.userName);
         UI.parentCount.html(res.bizData.parentCount);
         UI.teacherCount.html(res.bizData.teacherCount);
@@ -105,7 +112,7 @@ $(function () {
                     if (res.bizData.isExist) {
                         //已注册
                         console.log('ok,已注册');
-                        window.location.href = './share.html';
+                        window.location.href = './share.html?sysTime='+new Date().getTime();
                     } else {
 
                         //未注册

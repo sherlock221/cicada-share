@@ -52,11 +52,16 @@ var userId = parseInt(params.uId);
 //同步拉取用户数据
 Ajax.getUserInfo(userId, function (res) {
     if(res.rtnCode == "0000000"){
-        //加入
-        UI.head.attr("src",res.bizData.userIcon);
+
+        var img =  " ../share/images/default_image_head.png";
+        if(user.userIcon){
+            img = user.userIcon;
+        }
+
+        UI.head.attr('src',img);
+
         UI.phoneNum.html(params.phone);
     }
-
 });
 
 
