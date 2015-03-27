@@ -44,7 +44,6 @@ var TemplateEvent = {
     weixinShare : function(){
         var host = window.location.protocol + "//" + window.location.host;
         if (typeof(WeixinApi) != "undefined") {
-            alert("支持！");
             //分享
             WeixinApi.ready(function (Api) {
                 // 微信分享的数据

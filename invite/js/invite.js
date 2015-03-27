@@ -110,11 +110,10 @@ $(function () {
 
                         //未注册
                         console.log('error,未注册');
-
                         //邀请
                         Ajax.inviteRecord(userId,UI.phone.val(),function(res){
                             if (res.rtnCode == '0000000') {
-                                window.location.href = './download.html?phone='+phone;
+                                window.location.href = './download.html?phone='+phone+"&uId="+userId;
                             }
                             else{
                                 alert(res.msg);

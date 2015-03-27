@@ -19,7 +19,10 @@ var Util = {
 
         checkMobile : function () {
             var ua = window.navigator.userAgent.toLowerCase();
-            if (ua.indexOf("qq/") > -1) {
+            if( navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
+                return {"type":"iOS"};
+            }
+            else if (ua.indexOf("qq/") > -1) {
                 return {"message": "qq下载请点击右上角在浏览器中打开", "type": "other"}
             }
             else if (ua.match(/MicroMessenger/i) == 'micromessenger') {
@@ -28,9 +31,7 @@ var Util = {
             else if(navigator.userAgent.match(/Android/i)) {
                 return {"type":"Android"};
             }
-            else if( navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
-                return {"type":"iOS"};
-            }
+
         },
 
         sharePgaeByUserId: function (type, url, sjson) {

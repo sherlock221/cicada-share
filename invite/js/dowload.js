@@ -12,22 +12,64 @@ var  UI = {
 
 }
 
-//获取user
-var  user  = Util.storage.getLgObj("user");
+
+var Ajax = {
+
+
+    getUserInfo: function (userId, callback) {
+        $.ajax({
+            async: false,
+            type: "post",
+            url: CONSTANT_ENV.local + '/relation/queryUserInfoAndUserCount',
+            dataType: 'json',
+            data: {
+                userId: userId
+            },
+            success: callback,
+            error: function () {
+                alert("服务器内部错误！");
+            }
+        })
+    }
+
+};
+
+
+
 
 var  currentPlatform = Util.platform.checkMobile();
 var  iosUrl = "https://itunes.apple.com/cn/app/id948591472?mt=8";
 var  androidUrl  ="http://imzhiliao.com/zhiliao.apk";
-
 var  params = Util.location.getParams();
 
+if(!currentPlatform){
+    alert("pc平台");
+}
+
+//获取param参数
+var userId = parseInt(params.uId);
+
+//同步拉取用户数据
+Ajax.getUserInfo(userId, function (res) {
+    if(res.rtnCode == "0000000"){
+        //加入
+        UI.head.attr("src",res.bizData.userIcon);
+        UI.phoneNum.html(params.phone);
+    }
+
+});
+
+
+
+
 $(function(){
-    //加入
-    UI.head.attr("src",user.userIcon);
-    UI.phoneNum.html(params.phone);
+
+    //获取user
+    var  user  = Util.storage.getLgObj("user");
 
     //下载按钮
     UI.downBtn.hammer({}).bind("tap", function () {
+
         if(currentPlatform.type == "other"){
             alert(currentPlatform.message);
         }
