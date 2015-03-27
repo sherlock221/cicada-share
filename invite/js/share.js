@@ -22,8 +22,6 @@ $(function(){
     }
 
     UI.head.attr('src',img);
-    //加入
-    UI.head.attr("src",user.userIcon);
 
     //分享button
     UI.shareBtn.hammer({}).bind("tap", function () {

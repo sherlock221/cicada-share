@@ -4,6 +4,7 @@ var Ajax = {
         $.ajax({
             type: "post",
             url: CONSTANT_ENV.credit + '/task/getTaskList',
+//            url: '../task/data/credit/task/getTaskList.json',
             dataType: 'json',
             data: {
                 "token": token,

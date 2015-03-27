@@ -54,12 +54,10 @@ Ajax.getUserInfo(userId, function (res) {
     if(res.rtnCode == "0000000"){
 
         var img =  " ../share/images/default_image_head.png";
-        if(user.userIcon){
-            img = user.userIcon;
+        if(res.bizData.userIcon){
+            img = res.bizData.userIcon;
         }
-
         UI.head.attr('src',img);
-
         UI.phoneNum.html(params.phone);
     }
 });

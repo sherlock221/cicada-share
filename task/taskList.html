@@ -32,7 +32,10 @@
 <script id="task-tem" type="text/html">
     <%for (var i=0;i
     <bizData.length;i++) {%>
-    <div class="section fx-row fx-row-center">
+
+
+
+    <div class="section  <%if(bizData[i].maxNum == bizData[i].completedNum && bizData[i].maxNum != 0 ){%>active<%}%>  fx-row fx-row-center">
         <div class="left ">
             <i class="icon <%=bizData[i].image %>"></i>
         </div>
@@ -44,22 +47,16 @@
         <div class="right">
             <%if(bizData[i].url) {%>
 
+                <%if(bizData[i].maxNum == bizData[i].completedNum  && bizData[i].maxNum != 0) {%>
 
-            <%if(bizData[i].maxNum) {%>
-                <%if(bizData[i].maxNum != bizData[i].completedNum ) {%>
+                <%}else{%>
                         <a href="javascript:goPage('<%=bizData[i].url %>')" class="btn btn-goto ntp">前往</a>
                 <%}%>
-            <%}%>
 
-
-            <%if(!bizData[i].maxNum) {%>
-                    <a href="javascript:goPage('<%=bizData[i].url %>')" class="btn btn-goto ntp">前往</a>
-            <%}%>
-
-
-
+            <%}else{%>
 
             <%}%>
+
         </div>
     </div>
     <%}%>

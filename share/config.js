@@ -8,14 +8,12 @@ var CONSTANT_TASK = {
         inverte_parent: 'cicada://inverte/parent',
         inverte_publish: 'cicada://page/publish'
     },
-
     cicada_share_url:{
         ios_share_url:'cicada://cicada/sharePageByUserId'
     }
-
 };
 
-//测试环境
+////测试环境
 var CONSTANT_ENV ={
         RES : "http://10.10.68.11",
         credit : "http://10.10.68.11:10000/credit",
