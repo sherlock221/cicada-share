@@ -10,11 +10,11 @@ var Util = {
 //            }
             window.location.href = 'cicada://public/page/index';
 
-            window.setTimeout(function () {
-                // 附加一个特殊参数，用来标识这次刷新不要再调用cicada://
-           //     window.location.href += '?refresh=1'
-                alert("超时");
-            }, 500);
+//            window.setTimeout(function () {
+//                // 附加一个特殊参数，用来标识这次刷新不要再调用cicada://
+//           //     window.location.href += '?refresh=1'
+//                //alert("超时");
+//            }, 500);
 
         },
 

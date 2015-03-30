@@ -98,7 +98,6 @@ Ajax.getUserInfo(userId, function (res) {
 
 
 $(function () {
-
     //按钮跳转
     UI.getValueBtn.hammer({}).bind("tap",function () {
         var phone = UI.phone.val();

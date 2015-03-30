@@ -14,21 +14,29 @@ var CONSTANT_TASK = {
 };
 
 //测试环境
-var CONSTANT_ENV ={
-        RES : "http://10.10.68.11",
-        credit : "http://10.10.68.11:10000/credit",
-        local:  "http://10.10.68.11:10000/uc"
-//        local:  "http://172.16.130.218:8080/uc"
-};
+//var CONSTANT_ENV ={
+//        RES : "http://10.10.68.11",
+//        credit : "http://10.10.68.11:10000/credit",
+//        local:  "http://10.10.68.11:10000/uc"
+////        local:  "http://172.16.130.218:8080/uc"
+//};
+
+
+//var CONSTANT_ENV ={
+//        RES : "http://10.10.68.11",
+//        credit : "http://10.10.68.11:10000/credit",
+//        local:  "http://172.16.130.70:8080/uc"
+////        local:  "http://172.16.130.218:8080/uc"
+//};
 
 
 ////正式
-//var CONSTANT_ENV ={
-//    RES : "http://imzhiliao.com",
-//    credit : "http://imzhiliao.com:10000/credit",
-//    local:  "http://imzhiliao.com:10000/uc"
-////        local:  "http://172.16.130.218:8080/uc"
-//};
+var CONSTANT_ENV ={
+    RES : "http://imzhiliao.com",
+    credit : "http://imzhiliao.com:10000/credit",
+    local:  "http://imzhiliao.com:10000/uc"
+//        local:  "http://172.16.130.218:8080/uc"
+};
 
 //var CONSTANT_ENV ={
 //        RES : "http://10.10.68.11",
