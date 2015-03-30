@@ -16,10 +16,12 @@ var  user  = Util.storage.getLgObj("user");
 
 $(function(){
 
-    var img =  " ../share/images/default_image_head.png";
-    if(user.userIcon){
-        img = user.userIcon;
-    }
+//    var img =  " ../share/images/default_image_head.png";
+    var img =  "../share/images/cicada-logo.png";
+
+//    if(user.userIcon){
+//        img = user.userIcon;
+//    }
 
     UI.head.attr('src',img);
 
