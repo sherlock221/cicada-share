@@ -38,8 +38,11 @@ var Ajax = {
 
 
 var  currentPlatform = Util.platform.checkMobile();
-var  iosUrl = "https://itunes.apple.com/cn/app/id948591472?mt=8";
-var  androidUrl  ="http://imzhiliao.com/zhiliao.apk";
+
+var  treasure =  "http://a.app.qq.com/o/simple.jsp?pkgname=com.cicada.cicada";
+
+//var  iosUrl = "https://itunes.apple.com/cn/app/id948591472?mt=8";
+//var  androidUrl  ="http://imzhiliao.com/zhiliao.apk";
 var  params = Util.location.getParams();
 
 if(!currentPlatform){
@@ -75,15 +78,17 @@ $(function(){
     //下载按钮
     UI.downBtn.hammer({}).bind("tap", function () {
 
-        if(currentPlatform.type == "other"){
-            alert(currentPlatform.message);
-        }
-        else if(currentPlatform.type == "iOS"){
-            window.location.href = iosUrl;
-        }
-        else if(currentPlatform.type == "Android"){
-            window.location.href = androidUrl;
-        }
+//        if(currentPlatform.type == "other"){
+//            alert(currentPlatform.message);
+//        }
+//        else if(currentPlatform.type == "iOS"){
+//            window.location.href = iosUrl;
+//        }
+//        else if(currentPlatform.type == "Android"){
+//            window.location.href = androidUrl;
+//        }
+
+        window.location.href = treasure;
     });
 
 
