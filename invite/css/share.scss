@@ -12,6 +12,10 @@ body {
   color: #fff;
 }
 
+b{
+  display: inline;
+}
+
 .warp {
   margin: rem(40);
   color: #fff;
@@ -67,8 +71,10 @@ body {
       //      text-align: center;
       line-height: rem(60);
       b {
-        font-size: rem(40);
-        padding: 0 rem(12);
+        font-size: rem(36);
+//        padding: 0 rem(12);
+        display: inline-block;
+        margin: 0 rem(10);
       }
     }
     .text-two {

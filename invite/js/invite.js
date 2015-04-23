@@ -91,7 +91,7 @@ Ajax.getUserInfo(userId, function (res) {
 
         //存入storage
         Util.storage.setLgObj("user",res.bizData);
-        Util.storage.setLgObj("shareUrl",window.location.href);
+        Util.storage.setLg("shareUrl",window.location.href);
     }
 
 });
@@ -125,7 +125,6 @@ $(function () {
                                 alert(res.msg);
                             }
                         });
-
                     }
                 } else {
                     console.log(res.msg)

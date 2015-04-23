@@ -14,6 +14,8 @@ var  UI = {
 //获取user
 var  user  = Util.storage.getLgObj("user");
 
+var  treasure =  "http://a.app.qq.com/o/simple.jsp?pkgname=com.cicada.cicada";
+
 $(function(){
 
 //    var img =  " ../share/images/default_image_head.png";
@@ -32,7 +34,8 @@ $(function(){
 
     //打开知了
     UI.openBtn.hammer({}).bind("tap", function () {
-        Util.platform.openCiacada();
+        //Util.platform.openCiacada();
+        window.location.href = treasure;
     });
 });
 
